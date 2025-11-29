@@ -1,0 +1,40 @@
+name: nvfetcher
+on:
+  schedule:
+    - cron: "10 5 * * *"
+  workflow_dispatch:
+  repository_dispatch:
+jobs:
+  nvfetcher:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DeterminateSystems/nix-installer-action@main
+      - uses: DeterminateSystems/magic-nix-cache-action@main
+      - name: "nvfetcher generate"
+        run: nix-shell -p nvfetcher --command "nvfetcher -v --keep-going"
+      - name: Check for changes
+        id: check-change
+        run: |
+          nix-shell -p git-crypt
+          set +e
+          git diff --quiet --exit-code _sources/generated.nix
+          changed=$?
+          echo "changed=$changed" >> $GITHUB_OUTPUT
+      - name: Test build
+        if: "${{ steps.check-change.outputs.changed == 1 }}"
+        run: |
+          export NIXPKGS_ALLOW_UNFREE=1
+          nix flake show --json | jq  '.packages."x86_64-linux"|keys[]' | xargs -I {} nix build --impure .#{}
+      - name: Commit changes
+        if: "${{ steps.check-change.outputs.changed == 1 }}"
+        run: |
+          git config --local user.email "action@miao.dev"
+          git config --local user.name "nvfetcher action"
+          git commit _sources -m "Update generated dependencies"
+      - name: Push changes
+        if: "${{ steps.check-change.outputs.changed == 1 }}"
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
