@@ -19,10 +19,17 @@ in
   );
   vscode-insider =
     let
-      extraBuildInputs = with pkgs; [
-        curl
-        libsoup_3
-        webkitgtk_4_1
+      platformDeps =
+        with pkgs;
+        if stdenv.hostPlatform.isLinux then
+          [
+            libsoup_3
+            webkitgtk_4_1
+          ]
+        else
+          [ ];
+      extraBuildInputs = platformDeps ++ [
+        pkgs.curl
       ];
     in
     (pkgs.vscode.override {
