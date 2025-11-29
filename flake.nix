@@ -21,6 +21,18 @@
           "x86_64-darwin"
           "aarch64-darwin"
         ];
+        flake = {
+          overlay = {
+            vscode =
+              self: super:
+              let
+                vscode = import ./src/vscode.nix super;
+              in
+              {
+                inherit (vscode) vscode vscode-insider;
+              };
+          };
+        };
         perSystem =
           { pkgs, system, ... }:
           {

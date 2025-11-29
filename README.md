@@ -39,6 +39,35 @@ In your `flake.nix`, you can import packages from this flake as follows:
 }
 ```
 
+## Overlays
+
+### VS Code Overlay
+
+Output: `.#overlay.vscode`
+
+This flake provides a Nixpkgs overlay that adds the latest VS Code and VS Code Insider packages. You can use this overlay in your NixOS configuration or home-manager setup:
+
+```nix
+{
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs";
+    flakes.url = "github:George-Miao/flakes";
+  };
+
+  outputs = { self, nixpkgs, flakes, ... }: {
+    nixosConfigurations.myHost = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [
+        {
+          nixpkgs.overlays = [ flakes.overlay.vscode ];
+        }
+        # Now you can use pkgs.vscode and pkgs.vscode-insider
+      ];
+    };
+  };
+}
+```
+
 ## Packages
 
 ### Vericert
