@@ -41,11 +41,7 @@ In your `flake.nix`, you can import packages from this flake as follows:
 
 ## Overlays
 
-### VS Code Overlay
-
-Output: `.#overlay.vscode`
-
-This flake provides a Nixpkgs overlay that adds the latest VS Code and VS Code Insider packages. You can use this overlay in your NixOS configuration or home-manager setup:
+All packages exposed in this flake can be also accessed via overlays. The easiest way is to use `.#overlay.default` and all packages will be available in your nixpkgs:
 
 ```nix
 {
@@ -59,14 +55,21 @@ This flake provides a Nixpkgs overlay that adds the latest VS Code and VS Code I
       system = "x86_64-linux";
       modules = [
         {
-          nixpkgs.overlays = [ flakes.overlay.vscode ];
+          nixpkgs.overlays = [ flakes.overlays.default ];
         }
-        # Now you can use pkgs.vscode and pkgs.vscode-insider
+        # Now you can use flakes packages in your configuration
       ];
     };
   };
 }
 ```
+
+You can also use specific overlays for individual packages:
+
+- `.#overlays.default`: includes all packages
+- `.#overlays.vscode`: includes `vscode` and `vscode-insider`
+- `.#overlays.vericert`: includes `vericert`
+- `.#overlays.wallpaper`: includes `pops-wallpaper` and `nordic-wallpaper`
 
 ## Packages
 
@@ -93,12 +96,12 @@ Latest insider/preview version of Visual Studio Code with experimental features 
 
 ### Pop Wallpaper
 
-Output: `.#packages.${system}.pop-wallpaper`
+Output: `.#packages.pop-wallpaper` and `.#packages.${system}.pop-wallpaper`
 
 A collection of wallpapers from George Miao's personal [wallpaper repository](https://github.com/George-Miao/wallpaper).
 
 ### Nordic Wallpaper
 
-Output: `.#packages.${system}.nordic-wallpaper`
+Output: `.#packages.nordic-wallpaper` and `.#packages.${system}.nordic-wallpaper`
 
 A collection of Nordic-themed wallpapers from the [nordic-wallpapers](https://github.com/linuxdotexe/nordic-wallpapers) repository.
