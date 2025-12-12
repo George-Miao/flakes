@@ -3,6 +3,7 @@ lib: rec {
     vscode
     vericert
     wallpaper
+    openwebstart
   ];
 
   vscode = self: super: {
@@ -15,5 +16,9 @@ lib: rec {
 
   wallpaper = self: super: {
     inherit (import ./generated.nix super) pop-wallpaper nordic-wallpaper;
+  };
+
+  openwebstart = self: super: {
+    openwebstart = super.callPackage ./openwebstart.nix { };
   };
 }

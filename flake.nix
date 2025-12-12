@@ -29,11 +29,13 @@
           {
             packages =
               let
-                generated = import ./src/generated.nix pkgs;
-                vscode = import ./src/vscode.nix pkgs;
+                generated = pkgs.callPackage ./src/generated.nix { };
+                vscode = pkgs.callPackage ./src/vscode.nix { };
+                openwebstart = pkgs.callPackage ./src/openwebstart.nix { };
               in
               {
                 inherit (vscode) vscode vscode-insider;
+                inherit openwebstart;
                 vericert = vericert.packages.${system}.vericert;
                 pop-wallpaper = generated.pop-wallpaper.src;
                 nordic-wallpaper = generated.nordic-wallpaper.src;
