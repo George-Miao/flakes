@@ -49,11 +49,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-XZ0UwvBN7i/JQJN/M9bpoEI0AvTaoE7T9kaD8Zj/Ku8=",
+            "sha256": "sha256-Zk4/aOKVRs8rpABRvPPryk8lyvM41oE52YExDzRrje8=",
             "type": "tarball",
-            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/b8124edbda5cdacc07ca6d35b9e03e20fdb736a4/code-insider-arm64-1770226076.tar.gz"
+            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/c7a9f45792fc0b43bda6fbbe0204454c91471a2c/code-insider-arm64-1770355250.tar.gz"
         },
-        "version": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/b8124edbda5cdacc07ca6d35b9e03e20fdb736a4/code-insider-arm64-1770226076.tar.gz"
+        "version": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/c7a9f45792fc0b43bda6fbbe0204454c91471a2c/code-insider-arm64-1770355250.tar.gz"
     },
     "vscode-linux-arm64-stable": {
         "cargoLock": null,
@@ -77,11 +77,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-Svwxuehta+via9cQsH8yQ/Cnkws9MvLRllVt/RuHi5U=",
+            "sha256": "sha256-5tpCOyk2HKjIPh1uXYFmCQuoCURlqv0iStBQHAIJRxU=",
             "type": "tarball",
-            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/b8124edbda5cdacc07ca6d35b9e03e20fdb736a4/code-insider-x64-1770226069.tar.gz"
+            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/c7a9f45792fc0b43bda6fbbe0204454c91471a2c/code-insider-x64-1770355254.tar.gz"
         },
-        "version": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/b8124edbda5cdacc07ca6d35b9e03e20fdb736a4/code-insider-x64-1770226069.tar.gz"
+        "version": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/c7a9f45792fc0b43bda6fbbe0204454c91471a2c/code-insider-x64-1770355254.tar.gz"
     },
     "vscode-linux-x64-stable": {
         "cargoLock": null,
