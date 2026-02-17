@@ -29,3 +29,15 @@ fetch.tarball = "$ver"
 [vscode-darwin-insider]
 src.cmd = """curl -Ls -o /dev/null -w %{url_effective} 'https://code.visualstudio.com/sha/download?build=insider&os=darwin-universal'"""
 fetch.tarball = "$ver"
+
+[verus-linux-x64]
+src.cmd = """curl -s https://api.github.com/repos/verus-lang/verus/releases/latest | jq -r '.tag_name | split("/") | last'"""
+fetch.tarball = "https://github.com/verus-lang/verus/releases/download/release%2F$ver/verus-$ver-x86-linux.zip"
+
+[verus-darwin-x64]
+src.cmd = """curl -s https://api.github.com/repos/verus-lang/verus/releases/latest | jq -r '.tag_name | split("/") | last'"""
+fetch.tarball = "https://github.com/verus-lang/verus/releases/download/release%2F$ver/verus-$ver-x86-macos.zip"
+
+[verus-darwin-arm64]
+src.cmd = """curl -s https://api.github.com/repos/verus-lang/verus/releases/latest | jq -r '.tag_name | split("/") | last'"""
+fetch.tarball = "https://github.com/verus-lang/verus/releases/download/release%2F$ver/verus-$ver-arm64-macos.zip"

@@ -29,11 +29,12 @@
           {
             packages =
               let
-                generated = pkgs.callPackage ./src/generated.nix { };
-                vscode = pkgs.callPackage ./src/vscode.nix { };
-                openwebstart = pkgs.callPackage ./src/openwebstart.nix { };
+                generated = import ./src/generated.nix pkgs;
+                vscode = import ./src/vscode.nix pkgs;
+                verus = import ./src/verus.nix pkgs generated;
               in
               {
+                inherit verus;
                 inherit (vscode) vscode vscode-insider;
                 inherit openwebstart;
                 vericert = vericert.packages.${system}.vericert;

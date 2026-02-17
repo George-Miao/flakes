@@ -18,7 +18,7 @@ lib: rec {
     inherit (import ./generated.nix super) pop-wallpaper nordic-wallpaper;
   };
 
-  openwebstart = self: super: {
-    openwebstart = super.callPackage ./openwebstart.nix { };
+  verus = self: super: {
+    verus = (import ./verus.nix super (import ./generated.nix super));
   };
 }

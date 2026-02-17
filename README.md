@@ -69,6 +69,7 @@ You can also use specific overlays for individual packages:
 - `.#overlays.default`: includes all packages
 - `.#overlays.vscode`: includes `vscode` and `vscode-insider`
 - `.#overlays.vericert`: includes `vericert`
+- `.#overlays.verus`: includes `verus`
 - `.#overlays.wallpaper`: includes `pops-wallpaper` and `nordic-wallpaper`
 
 ## Packages
@@ -81,6 +82,15 @@ A formally verified high-level synthesis (HLS) tool that compiles C to Verilog w
 
 > [!NOTE]
 > Vericert is old and requires a specific environment to be built correctly, therefore it pulls in its own nixpkgs. Redirect top-level flake's input will not change the nixpkgs used to build vericert.
+
+### Verus
+
+Output: `.#packages.${system}.verus`
+
+A verifier for Rust programs focused on proving correctness properties (such as safety and functional correctness) through specifications and proofs.
+
+> [!NOTE]
+> Verus may require a pinned Rust toolchain and solver dependencies (such as Z3) to work correctly. If you use it in a development shell, make sure your shell provides the required toolchain components.
 
 ### VS Code
 
