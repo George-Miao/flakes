@@ -31,6 +31,7 @@
               let
                 generated = import ./src/generated.nix pkgs;
                 vscode = import ./src/vscode.nix pkgs;
+                openwebstart = pkgs.callPackage ./src/openwebstart.nix { };
                 verus = import ./src/verus.nix pkgs generated;
               in
               {
