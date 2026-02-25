@@ -3,7 +3,6 @@
   fetchurl,
   fetchFromGitHub,
   dockerTools,
-  ...
 }:
 import ../_sources/generated.nix {
   inherit

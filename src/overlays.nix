@@ -7,18 +7,22 @@ lib: rec {
   ];
 
   vscode = self: super: {
-    inherit (import ./vscode.nix super) vscode vscode-insider;
+    inherit (super.callPackage ./vscode.nix { }) vscode vscode-insider;
   };
 
   vericert = self: super: {
-    vericert = (import ./generated.nix super).vericert;
+    vericert = (super.callPackage ./generated.nix { }).vericert;
   };
 
   wallpaper = self: super: {
-    inherit (import ./generated.nix super) pop-wallpaper nordic-wallpaper;
+    inherit (super.callPackage ./generated.nix { }) pop-wallpaper nordic-wallpaper;
   };
 
   verus = self: super: {
-    verus = (import ./verus.nix super (import ./generated.nix super));
+    verus = (super.callPackage ./verus.nix (super.callPackage ./generated.nix { }));
+  };
+
+  openwebstart = self: super: {
+    openwebstart = import ./openwebstart.nix super;
   };
 }

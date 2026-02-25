@@ -1,38 +1,41 @@
-pkgs:
+{
+  generated,
+  vscode,
+  stdenv,
+  curl,
+  libsoup_3,
+  webkitgtk_4_1,
+}:
 let
-  generated = import ./generated.nix pkgs;
   vsc-system =
-    if pkgs.stdenv.hostPlatform.isDarwin then
+    if stdenv.hostPlatform.isDarwin then
       "darwin"
-    else if pkgs.stdenv.hostPlatform.isAarch then
+    else if stdenv.hostPlatform.isAarch then
       "linux-arm64"
     else
       "linux-x64";
+  platformDeps =
+    if stdenv.hostPlatform.isLinux then
+      [
+        libsoup_3
+        webkitgtk_4_1
+      ]
+    else
+      [ ];
+  extraBuildInputs = platformDeps ++ [
+    curl
+  ];
 in
 {
-  vscode = pkgs.vscode.overrideAttrs (
+  vscode = vscode.overrideAttrs (
     f: old: {
-      inherit (old) buildInputs;
+      buildInputs = old.buildInputs ++ extraBuildInputs;
       src = generated."vscode-${vsc-system}-stable".src;
       version = "latest";
     }
   );
   vscode-insider =
-    let
-      platformDeps =
-        with pkgs;
-        if stdenv.hostPlatform.isLinux then
-          [
-            libsoup_3
-            webkitgtk_4_1
-          ]
-        else
-          [ ];
-      extraBuildInputs = platformDeps ++ [
-        pkgs.curl
-      ];
-    in
-    (pkgs.vscode.override {
+    (vscode.override {
       isInsiders = true;
       useVSCodeRipgrep = false;
     }).overrideAttrs

@@ -1,8 +1,11 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs";
-    vericert.url = "path:vericert";
     flake-parts.url = "github:hercules-ci/flake-parts";
+    vericert = {
+      url = "path:vericert";
+      inputs.flake-parts.follows = "flake-parts";
+    };
   };
 
   outputs =
@@ -21,27 +24,38 @@
           "x86_64-darwin"
           "aarch64-darwin"
         ];
+
         flake = {
           overlays = import ./src/overlays.nix nixpkgs.lib;
         };
+
         perSystem =
-          { pkgs, system, ... }:
           {
+            pkgs,
+            lib,
+            system,
+            ...
+          }:
+          let
+            skipCheck = p: (system == "aarch64-linux" && p == "verus");
+          in
+          rec {
+            checks = lib.filterAttrs (p: _: !(skipCheck p)) packages;
             packages =
               let
-                generated = import ./src/generated.nix pkgs;
-                vscode = import ./src/vscode.nix pkgs;
                 openwebstart = pkgs.callPackage ./src/openwebstart.nix { };
-                verus = import ./src/verus.nix pkgs generated;
+                generated = pkgs.callPackage ./src/generated.nix { };
+                vscode = pkgs.callPackage ./src/vscode.nix { inherit generated; };
+                verus = pkgs.callPackage ./src/verus.nix { inherit generated; };
               in
               {
-                inherit verus;
                 inherit (vscode) vscode vscode-insider;
                 inherit openwebstart;
                 vericert = vericert.packages.${system}.vericert;
                 pop-wallpaper = generated.pop-wallpaper.src;
                 nordic-wallpaper = generated.nordic-wallpaper.src;
-              };
+              }
+              // (lib.optionalAttrs (system != "aarch64-linux") { inherit verus; });
           };
       }
     );

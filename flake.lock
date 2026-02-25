@@ -73,6 +73,9 @@
     },
     "vericert": {
       "inputs": {
+        "flake-parts": [
+          "flake-parts"
+        ],
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {

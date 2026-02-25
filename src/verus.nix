@@ -1,6 +1,9 @@
-pkgs: generated:
+{
+  stdenv,
+  generated,
+}:
 let
-  system = pkgs.stdenv.hostPlatform.system;
+  system = stdenv.hostPlatform.system;
   src =
     if system == "x86_64-linux" then
       generated.verus-linux-x64
@@ -11,7 +14,7 @@ let
     else
       throw "Unsupported system: ${system}";
 in
-pkgs.stdenv.mkDerivation {
+stdenv.mkDerivation {
   pname = "verus";
   inherit (src) version src;
 
