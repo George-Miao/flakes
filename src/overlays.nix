@@ -6,23 +6,26 @@ lib: rec {
     openwebstart
   ];
 
-  vscode = self: super: {
-    inherit (super.callPackage ./vscode.nix { }) vscode vscode-insider;
+  vscode = final: prev: {
+    inherit (prev.callPackage ./vscode.nix { generated = (prev.callPackage ./generated.nix { }); })
+      vscode
+      vscode-insider
+      ;
   };
 
-  vericert = self: super: {
-    vericert = (super.callPackage ./generated.nix { }).vericert;
+  vericert = final: prev: {
+    vericert = (prev.callPackage ./generated.nix { }).vericert;
   };
 
-  wallpaper = self: super: {
-    inherit (super.callPackage ./generated.nix { }) pop-wallpaper nordic-wallpaper;
+  wallpaper = final: prev: {
+    inherit (prev.callPackage ./generated.nix { }) pop-wallpaper nordic-wallpaper;
   };
 
-  verus = self: super: {
-    verus = (super.callPackage ./verus.nix (super.callPackage ./generated.nix { }));
+  verus = final: prev: {
+    verus = (prev.callPackage ./verus.nix { generated = (prev.callPackage ./generated.nix { }); });
   };
 
-  openwebstart = self: super: {
-    openwebstart = import ./openwebstart.nix super;
+  openwebstart = final: prev: {
+    openwebstart = import ./openwebstart.nix prev;
   };
 }
