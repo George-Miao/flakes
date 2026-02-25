@@ -91,6 +91,8 @@ A verifier for Rust programs focused on proving correctness properties (such as 
 
 > [!NOTE]
 > Verus may require a pinned Rust toolchain and solver dependencies (such as Z3) to work correctly. If you use it in a development shell, make sure your shell provides the required toolchain components.
+>
+> Verus does not provide pre-built binaries for `aarch64-linux` so this flake omits the package for that platform.
 
 ### VS Code
 
