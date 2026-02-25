@@ -29,8 +29,8 @@
                 };
                 veriT = pkgs.veriT.overrideAttrs (oA: {
                   src = pkgs.fetchurl {
-                    url = "https://www.lri.fr/~keller/Documents-recherche/Smtcoq/veriT9f48a98.tar.gz";
-                    sha256 = "sha256-Pe46PxQVHWwWwx5Ei4Bl95A0otCiXZuUZ2nXuZPYnhY=";
+                    url = "https://verit.loria.fr/download/tip/verit-2021.06-40-gc20206d-rmx.tar.gz";
+                    sha256 = "sha256-0XQdimpQ6iNrObglZmASKXAEwZ7JprkRODQrudE1mAs=";
                   };
                   meta.broken = false;
                 });
