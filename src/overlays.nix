@@ -26,6 +26,6 @@ lib: rec {
   };
 
   openwebstart = final: prev: {
-    openwebstart = import ./openwebstart.nix prev;
+    openwebstart = prev.callPackage ./openwebstart.nix { };
   };
 }
