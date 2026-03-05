@@ -41,3 +41,7 @@ fetch.tarball = "https://github.com/verus-lang/verus/releases/download/release%2
 [verus-darwin-arm64]
 src.cmd = """curl -s https://api.github.com/repos/verus-lang/verus/releases/latest | jq -r '.tag_name | split("/") | last'"""
 fetch.tarball = "https://github.com/verus-lang/verus/releases/download/release%2F$ver/verus-$ver-arm64-macos.zip"
+
+[verusfmt]
+src.github = "verus-lang/verusfmt"
+fetch.github = "verus-lang/verusfmt"

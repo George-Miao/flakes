@@ -2,6 +2,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs";
     flake-parts.url = "github:hercules-ci/flake-parts";
+    crane.url = "github:ipetkov/crane";
     vericert = {
       url = "path:vericert";
       inputs.flake-parts.follows = "flake-parts";
@@ -13,6 +14,7 @@
       vericert,
       nixpkgs,
       flake-parts,
+      crane,
       ...
     }:
     flake-parts.lib.mkFlake { inherit inputs; } (
@@ -26,7 +28,10 @@
         ];
 
         flake = {
-          overlays = import ./src/overlays.nix nixpkgs.lib;
+          overlays = import ./src/overlays.nix {
+            inherit (nixpkgs) lib;
+            inherit inputs;
+          };
         };
 
         perSystem =
@@ -37,6 +42,7 @@
             ...
           }:
           let
+            craneLib = crane.mkLib pkgs;
             skipCheck = p: (system == "aarch64-linux" && p == "verus");
           in
           rec {
@@ -47,10 +53,11 @@
                 generated = pkgs.callPackage ./src/generated.nix { };
                 vscode = pkgs.callPackage ./src/vscode.nix { inherit generated; };
                 verus = pkgs.callPackage ./src/verus.nix { inherit generated; };
+                verusfmt = pkgs.callPackage ./src/verusfmt.nix { inherit generated craneLib; };
               in
               {
                 inherit (vscode) vscode vscode-insider;
-                inherit openwebstart;
+                inherit openwebstart verusfmt;
                 vericert = vericert.packages.${system}.vericert;
                 pop-wallpaper = generated.pop-wallpaper.src;
                 nordic-wallpaper = generated.nordic-wallpaper.src;
