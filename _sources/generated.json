@@ -112,11 +112,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-AJBrGBEEPtqtyUMpgpUuM/xn1gl75mo2s75TbX7m4wo=",
+            "sha256": "sha256-JzmaSy1/K/C/GgKWX4iwK0/hMtE/HjbLlP2MJlleo+8=",
             "type": "tarball",
-            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/fd0fbb3f5bf3dafc048826e300f0e6b1888af2bd/VSCode-darwin.zip"
+            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/93cfdd489c3b228840d0f86ec77c3636277c93ea/VSCode-darwin.zip"
         },
-        "version": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/fd0fbb3f5bf3dafc048826e300f0e6b1888af2bd/VSCode-darwin.zip"
+        "version": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/93cfdd489c3b228840d0f86ec77c3636277c93ea/VSCode-darwin.zip"
     },
     "vscode-darwin-stable": {
         "cargoLock": null,
@@ -140,11 +140,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-J38OkIz185GDQC7yx2vSWxRDP17PhdyIF8rsPQ3b8F0=",
+            "sha256": "sha256-DYATq8IQWurEsKXc60uQlIIOIK7AMN6pREGjbd6+NaM=",
             "type": "tarball",
-            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/fd0fbb3f5bf3dafc048826e300f0e6b1888af2bd/code-insider-arm64-1781500048.tar.gz"
+            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/93cfdd489c3b228840d0f86ec77c3636277c93ea/code-insider-arm64-1781568076.tar.gz"
         },
-        "version": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/fd0fbb3f5bf3dafc048826e300f0e6b1888af2bd/code-insider-arm64-1781500048.tar.gz"
+        "version": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/93cfdd489c3b228840d0f86ec77c3636277c93ea/code-insider-arm64-1781568076.tar.gz"
     },
     "vscode-linux-arm64-stable": {
         "cargoLock": null,
@@ -168,11 +168,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-aSBf0aHZ89aRiN9UE5i9UoA5X/GUU2xg0sPAi+86IEg=",
+            "sha256": "sha256-J/KJkSwO/TlQVvv8JMzJ3PNDp0RsKucdtO0o6M7CAso=",
             "type": "tarball",
-            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/fd0fbb3f5bf3dafc048826e300f0e6b1888af2bd/code-insider-x64-1781500073.tar.gz"
+            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/93cfdd489c3b228840d0f86ec77c3636277c93ea/code-insider-x64-1781568106.tar.gz"
         },
-        "version": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/fd0fbb3f5bf3dafc048826e300f0e6b1888af2bd/code-insider-x64-1781500073.tar.gz"
+        "version": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/93cfdd489c3b228840d0f86ec77c3636277c93ea/code-insider-x64-1781568106.tar.gz"
     },
     "vscode-linux-x64-stable": {
         "cargoLock": null,
