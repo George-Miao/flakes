@@ -5,6 +5,7 @@ rec {
     vericert
     wallpaper
     openwebstart
+    obscura-browser
   ];
 
   vscode = final: prev: {
@@ -35,5 +36,14 @@ rec {
 
   openwebstart = final: prev: {
     openwebstart = prev.callPackage ./openwebstart.nix { };
+  };
+
+  obscura-browser = final: prev: {
+    inherit
+      (prev.callPackage ./obscura-browser.nix {
+        generated = prev.callPackage ./generated.nix { };
+      })
+      obscura-browser-bin
+      ;
   };
 }

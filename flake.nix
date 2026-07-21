@@ -54,10 +54,14 @@
                 vscode = pkgs.callPackage ./src/vscode.nix { inherit generated; };
                 verus = pkgs.callPackage ./src/verus.nix { inherit generated; };
                 verusfmt = pkgs.callPackage ./src/verusfmt.nix { inherit generated craneLib; };
+                obscura-browser = pkgs.callPackage ./src/obscura-browser.nix {
+                  inherit generated;
+                };
                 ns3 = pkgs.callPackage ./src/ns3.nix { };
               in
               {
                 inherit (vscode) vscode vscode-insider;
+                inherit (obscura-browser) obscura-browser-bin;
                 inherit openwebstart verusfmt ns3;
                 vericert = vericert.packages.${system}.vericert;
                 pop-wallpaper = generated.pop-wallpaper.src;

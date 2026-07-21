@@ -20,6 +20,62 @@
         },
         "version": "7a8e3bcabafbefd1c5b19229841b9bf377a4b765"
     },
+    "obscura-browser-bin-darwin-arm64": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "obscura-browser-bin-darwin-arm64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-+294v8gRsiumF9k6ygiMgCuCpqqkZ2EKgyVrQ5TcfEc=",
+            "type": "tarball",
+            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.1.10/obscura-aarch64-macos.tar.gz"
+        },
+        "version": "v0.1.10"
+    },
+    "obscura-browser-bin-darwin-x64": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "obscura-browser-bin-darwin-x64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-DJ7v4lcAv4lOsGsPw/a1gN2P364On1FHAtXVutWXRLo=",
+            "type": "tarball",
+            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.1.10/obscura-x86_64-macos.tar.gz"
+        },
+        "version": "v0.1.10"
+    },
+    "obscura-browser-bin-linux-arm64": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "obscura-browser-bin-linux-arm64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-KzTav5dcQ+seGCyjCTVrzx0hQcwHCKKwQFot1YGq5xY=",
+            "type": "tarball",
+            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.1.10/obscura-aarch64-linux.tar.gz"
+        },
+        "version": "v0.1.10"
+    },
+    "obscura-browser-bin-linux-x64": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "obscura-browser-bin-linux-x64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-hFdyjtmgWHO6sHTIIFvKNc3x1jAqBv0iSG8Xe3nlDz0=",
+            "type": "tarball",
+            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.1.10/obscura-x86_64-linux.tar.gz"
+        },
+        "version": "v0.1.10"
+    },
     "pop-wallpaper": {
         "cargoLock": null,
         "date": null,

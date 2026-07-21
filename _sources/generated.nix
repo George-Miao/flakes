@@ -18,6 +18,38 @@
     };
     date = "2025-12-31";
   };
+  obscura-browser-bin-darwin-arm64 = {
+    pname = "obscura-browser-bin-darwin-arm64";
+    version = "v0.1.10";
+    src = fetchTarball {
+      url = "https://github.com/h4ckf0r0day/obscura/releases/download/v0.1.10/obscura-aarch64-macos.tar.gz";
+      sha256 = "sha256-+294v8gRsiumF9k6ygiMgCuCpqqkZ2EKgyVrQ5TcfEc=";
+    };
+  };
+  obscura-browser-bin-darwin-x64 = {
+    pname = "obscura-browser-bin-darwin-x64";
+    version = "v0.1.10";
+    src = fetchTarball {
+      url = "https://github.com/h4ckf0r0day/obscura/releases/download/v0.1.10/obscura-x86_64-macos.tar.gz";
+      sha256 = "sha256-DJ7v4lcAv4lOsGsPw/a1gN2P364On1FHAtXVutWXRLo=";
+    };
+  };
+  obscura-browser-bin-linux-arm64 = {
+    pname = "obscura-browser-bin-linux-arm64";
+    version = "v0.1.10";
+    src = fetchTarball {
+      url = "https://github.com/h4ckf0r0day/obscura/releases/download/v0.1.10/obscura-aarch64-linux.tar.gz";
+      sha256 = "sha256-KzTav5dcQ+seGCyjCTVrzx0hQcwHCKKwQFot1YGq5xY=";
+    };
+  };
+  obscura-browser-bin-linux-x64 = {
+    pname = "obscura-browser-bin-linux-x64";
+    version = "v0.1.10";
+    src = fetchTarball {
+      url = "https://github.com/h4ckf0r0day/obscura/releases/download/v0.1.10/obscura-x86_64-linux.tar.gz";
+      sha256 = "sha256-hFdyjtmgWHO6sHTIIFvKNc3x1jAqBv0iSG8Xe3nlDz0=";
+    };
+  };
   pop-wallpaper = {
     pname = "pop-wallpaper";
     version = "f79c2e";

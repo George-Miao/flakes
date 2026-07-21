@@ -70,6 +70,7 @@ You can also use specific overlays for individual packages:
 - `.#overlays.vscode`: includes `vscode` and `vscode-insider`
 - `.#overlays.vericert`: includes `vericert`
 - `.#overlays.verus`: includes `verus`
+- `.#overlays.obscura-browser`: includes `obscura-browser-bin`
 - `.#overlays.wallpaper`: includes `pops-wallpaper` and `nordic-wallpaper`
 
 ## Packages
@@ -93,6 +94,14 @@ A verifier for Rust programs focused on proving correctness properties (such as 
 > Verus may require a pinned Rust toolchain and solver dependencies (such as Z3) to work correctly. If you use it in a development shell, make sure your shell provides the required toolchain components.
 >
 > Verus does not provide pre-built binaries for `aarch64-linux` so this flake omits the package for that platform.
+
+### Obscura Browser
+
+Output: `.#packages.${system}.obscura-browser-bin`
+
+A lightweight headless browser for AI agents and web scraping. The
+package installs the corresponding native artifact from the upstream GitHub
+release and includes both the `obscura` and `obscura-worker` executables.
 
 ### VS Code
 
