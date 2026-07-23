@@ -1,4 +1,18 @@
 {
+    "clashx-meta": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "clashx-meta",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-ZbLEhqjcb8AMWmU8REKalv0iSKncyHGhPzcEKw99Uo8=",
+            "type": "tarball",
+            "url": "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v1.4.43/ClashX.Meta.zip"
+        },
+        "version": "v1.4.43"
+    },
     "nordic-wallpaper": {
         "cargoLock": null,
         "date": "2025-12-31",

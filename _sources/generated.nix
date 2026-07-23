@@ -6,6 +6,14 @@
   dockerTools,
 }:
 {
+  clashx-meta = {
+    pname = "clashx-meta";
+    version = "v1.4.43";
+    src = fetchTarball {
+      url = "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v1.4.43/ClashX.Meta.zip";
+      sha256 = "sha256-ZbLEhqjcb8AMWmU8REKalv0iSKncyHGhPzcEKw99Uo8=";
+    };
+  };
   nordic-wallpaper = {
     pname = "nordic-wallpaper";
     version = "7a8e3bcabafbefd1c5b19229841b9bf377a4b765";

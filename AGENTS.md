@@ -47,7 +47,12 @@ depend on or commit its contents.
 
 ## Updating generated sources
 
-Edit `nvfetcher.toml`, then regenerate both files under `_sources/` with:
+Always use nvfetcher for package sources when it can represent the upstream.
+Add or update the source in `nvfetcher.toml` and consume it through
+`src/generated.nix`; use a hand-written fixed-output fetcher only when nvfetcher
+cannot support the source.
+
+After editing `nvfetcher.toml`, regenerate both files under `_sources/` with:
 
 ```sh
 nix-shell -p nvfetcher --command "nvfetcher -v --keep-going"

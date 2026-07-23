@@ -6,6 +6,7 @@ rec {
     wallpaper
     openwebstart
     obscura-browser
+    clashx-meta
   ];
 
   vscode = final: prev: {
@@ -46,4 +47,12 @@ rec {
       obscura-browser-bin
       ;
   };
+
+  clashx-meta =
+    final: prev:
+    lib.optionalAttrs prev.stdenv.hostPlatform.isDarwin {
+      clashx-meta = prev.callPackage ./clashx-meta.nix {
+        generated = prev.callPackage ./generated.nix { };
+      };
+    };
 }

@@ -58,6 +58,7 @@
                   inherit generated;
                 };
                 ns3 = pkgs.callPackage ./src/ns3.nix { };
+                clashx-meta = pkgs.callPackage ./src/clashx-meta.nix { inherit generated; };
               in
               {
                 inherit (vscode) vscode vscode-insider;
@@ -67,7 +68,8 @@
                 pop-wallpaper = generated.pop-wallpaper.src;
                 nordic-wallpaper = generated.nordic-wallpaper.src;
               }
-              // (lib.optionalAttrs (system != "aarch64-linux") { inherit verus; });
+              // (lib.optionalAttrs (system != "aarch64-linux") { inherit verus; })
+              // (lib.optionalAttrs pkgs.stdenv.hostPlatform.isDarwin { inherit clashx-meta; });
           };
       }
     );

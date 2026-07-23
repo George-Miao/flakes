@@ -61,3 +61,7 @@ fetch.tarball = "https://github.com/h4ckf0r0day/obscura/releases/download/$ver/o
 [obscura-browser-bin-darwin-arm64]
 src.github = "h4ckf0r0day/obscura"
 fetch.tarball = "https://github.com/h4ckf0r0day/obscura/releases/download/$ver/obscura-aarch64-macos.tar.gz"
+
+[clashx-meta]
+src.github = "MetaCubeX/ClashX.Meta"
+fetch.tarball = "https://github.com/MetaCubeX/ClashX.Meta/releases/download/$ver/ClashX.Meta.zip"
