@@ -28,34 +28,34 @@
   };
   obscura-browser-bin-darwin-arm64 = {
     pname = "obscura-browser-bin-darwin-arm64";
-    version = "v0.1.11";
+    version = "v0.2.0";
     src = fetchTarball {
-      url = "https://github.com/h4ckf0r0day/obscura/releases/download/v0.1.11/obscura-aarch64-macos.tar.gz";
-      sha256 = "sha256-xcwC2Hw4lseHE2yFuH2n+bXCHGczPpKU3WrcbrO+7j0=";
+      url = "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.0/obscura-aarch64-macos.tar.gz";
+      sha256 = "sha256-p7iG/YMNBRnDbv2Jd7Wsy/Ysyjvo8Zl/JaJWKOWuKeg=";
     };
   };
   obscura-browser-bin-darwin-x64 = {
     pname = "obscura-browser-bin-darwin-x64";
-    version = "v0.1.11";
+    version = "v0.2.0";
     src = fetchTarball {
-      url = "https://github.com/h4ckf0r0day/obscura/releases/download/v0.1.11/obscura-x86_64-macos.tar.gz";
-      sha256 = "sha256-DhRSRpj2wrwEK3GTNAFcgM/AyJVPwuQH8wc84T59iEg=";
+      url = "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.0/obscura-x86_64-macos.tar.gz";
+      sha256 = "sha256-sBCpOT2Th74pDDg0Y16+cRpCpvq/xJohjEZqlmc3qRg=";
     };
   };
   obscura-browser-bin-linux-arm64 = {
     pname = "obscura-browser-bin-linux-arm64";
-    version = "v0.1.11";
+    version = "v0.2.0";
     src = fetchTarball {
-      url = "https://github.com/h4ckf0r0day/obscura/releases/download/v0.1.11/obscura-aarch64-linux.tar.gz";
-      sha256 = "sha256-cLLFweXOgxw1Zd2yUtGFuqrwUJZRjWDN+lfzHzRWNwU=";
+      url = "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.0/obscura-aarch64-linux.tar.gz";
+      sha256 = "sha256-uF/PZ6/wAj0KfRSV24pdee6psTaC4FQigm3WpSXbqIg=";
     };
   };
   obscura-browser-bin-linux-x64 = {
     pname = "obscura-browser-bin-linux-x64";
-    version = "v0.1.11";
+    version = "v0.2.0";
     src = fetchTarball {
-      url = "https://github.com/h4ckf0r0day/obscura/releases/download/v0.1.11/obscura-x86_64-linux.tar.gz";
-      sha256 = "sha256-guuQJu/rubJuJY5rWwbQM4z2GYMr2vEHs0w4aCgTpQk=";
+      url = "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.0/obscura-x86_64-linux.tar.gz";
+      sha256 = "sha256-9U/k0wvl487RKNMcqmkvUyMVw06tjKh0/JhpVNXUvp0=";
     };
   };
   pop-wallpaper = {
@@ -106,10 +106,10 @@
   };
   vscode-darwin-insider = {
     pname = "vscode-darwin-insider";
-    version = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/780ea331b2861816fe6bb8215d812933c81df83b/VSCode-darwin.zip";
+    version = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/8eaafbf4220a3cb099d7bd99c8d04dca7062236f/VSCode-darwin.zip";
     src = fetchTarball {
-      url = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/780ea331b2861816fe6bb8215d812933c81df83b/VSCode-darwin.zip";
-      sha256 = "sha256-71agckTaVZ3BjA9hApUZj9sP0SIs6Hdm+Dol00uRH/k=";
+      url = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/8eaafbf4220a3cb099d7bd99c8d04dca7062236f/VSCode-darwin.zip";
+      sha256 = "sha256-XGdU8nG45AYFTopD806RUrRvlyIRooKXpyrPS/NSLdc=";
     };
   };
   vscode-darwin-stable = {
@@ -122,10 +122,10 @@
   };
   vscode-linux-arm64-insider = {
     pname = "vscode-linux-arm64-insider";
-    version = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/780ea331b2861816fe6bb8215d812933c81df83b/code-insider-arm64-1785990096.tar.gz";
+    version = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/8eaafbf4220a3cb099d7bd99c8d04dca7062236f/code-insider-arm64-1786123411.tar.gz";
     src = fetchTarball {
-      url = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/780ea331b2861816fe6bb8215d812933c81df83b/code-insider-arm64-1785990096.tar.gz";
-      sha256 = "sha256-VAWxqzF8ORqmhttIlYTnUTZ/I6+Zf5e3vD2FcX01gA4=";
+      url = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/8eaafbf4220a3cb099d7bd99c8d04dca7062236f/code-insider-arm64-1786123411.tar.gz";
+      sha256 = "sha256-juNcWHhG5cOpIaLuFbTpTRKv7TURySFDw6j82mFQB+k=";
     };
   };
   vscode-linux-arm64-stable = {
@@ -138,10 +138,10 @@
   };
   vscode-linux-x64-insider = {
     pname = "vscode-linux-x64-insider";
-    version = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/780ea331b2861816fe6bb8215d812933c81df83b/code-insider-x64-1785990143.tar.gz";
+    version = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/8eaafbf4220a3cb099d7bd99c8d04dca7062236f/code-insider-x64-1786123385.tar.gz";
     src = fetchTarball {
-      url = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/780ea331b2861816fe6bb8215d812933c81df83b/code-insider-x64-1785990143.tar.gz";
-      sha256 = "sha256-z2lu3fvI4htIM0N3U01ulbEC+M1nSbCnUyDAYMDUBdU=";
+      url = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/8eaafbf4220a3cb099d7bd99c8d04dca7062236f/code-insider-x64-1786123385.tar.gz";
+      sha256 = "sha256-QPZdlGMiUvLjf9kKLERWynWwtAdugeqVMhpiTBwkyxw=";
     };
   };
   vscode-linux-x64-stable = {

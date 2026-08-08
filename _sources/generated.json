@@ -42,11 +42,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-xcwC2Hw4lseHE2yFuH2n+bXCHGczPpKU3WrcbrO+7j0=",
+            "sha256": "sha256-p7iG/YMNBRnDbv2Jd7Wsy/Ysyjvo8Zl/JaJWKOWuKeg=",
             "type": "tarball",
-            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.1.11/obscura-aarch64-macos.tar.gz"
+            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.0/obscura-aarch64-macos.tar.gz"
         },
-        "version": "v0.1.11"
+        "version": "v0.2.0"
     },
     "obscura-browser-bin-darwin-x64": {
         "cargoLock": null,
@@ -56,11 +56,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-DhRSRpj2wrwEK3GTNAFcgM/AyJVPwuQH8wc84T59iEg=",
+            "sha256": "sha256-sBCpOT2Th74pDDg0Y16+cRpCpvq/xJohjEZqlmc3qRg=",
             "type": "tarball",
-            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.1.11/obscura-x86_64-macos.tar.gz"
+            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.0/obscura-x86_64-macos.tar.gz"
         },
-        "version": "v0.1.11"
+        "version": "v0.2.0"
     },
     "obscura-browser-bin-linux-arm64": {
         "cargoLock": null,
@@ -70,11 +70,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-cLLFweXOgxw1Zd2yUtGFuqrwUJZRjWDN+lfzHzRWNwU=",
+            "sha256": "sha256-uF/PZ6/wAj0KfRSV24pdee6psTaC4FQigm3WpSXbqIg=",
             "type": "tarball",
-            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.1.11/obscura-aarch64-linux.tar.gz"
+            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.0/obscura-aarch64-linux.tar.gz"
         },
-        "version": "v0.1.11"
+        "version": "v0.2.0"
     },
     "obscura-browser-bin-linux-x64": {
         "cargoLock": null,
@@ -84,11 +84,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-guuQJu/rubJuJY5rWwbQM4z2GYMr2vEHs0w4aCgTpQk=",
+            "sha256": "sha256-9U/k0wvl487RKNMcqmkvUyMVw06tjKh0/JhpVNXUvp0=",
             "type": "tarball",
-            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.1.11/obscura-x86_64-linux.tar.gz"
+            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.0/obscura-x86_64-linux.tar.gz"
         },
-        "version": "v0.1.11"
+        "version": "v0.2.0"
     },
     "pop-wallpaper": {
         "cargoLock": null,
@@ -182,11 +182,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-71agckTaVZ3BjA9hApUZj9sP0SIs6Hdm+Dol00uRH/k=",
+            "sha256": "sha256-XGdU8nG45AYFTopD806RUrRvlyIRooKXpyrPS/NSLdc=",
             "type": "tarball",
-            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/780ea331b2861816fe6bb8215d812933c81df83b/VSCode-darwin.zip"
+            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/8eaafbf4220a3cb099d7bd99c8d04dca7062236f/VSCode-darwin.zip"
         },
-        "version": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/780ea331b2861816fe6bb8215d812933c81df83b/VSCode-darwin.zip"
+        "version": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/8eaafbf4220a3cb099d7bd99c8d04dca7062236f/VSCode-darwin.zip"
     },
     "vscode-darwin-stable": {
         "cargoLock": null,
@@ -210,11 +210,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-VAWxqzF8ORqmhttIlYTnUTZ/I6+Zf5e3vD2FcX01gA4=",
+            "sha256": "sha256-juNcWHhG5cOpIaLuFbTpTRKv7TURySFDw6j82mFQB+k=",
             "type": "tarball",
-            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/780ea331b2861816fe6bb8215d812933c81df83b/code-insider-arm64-1785990096.tar.gz"
+            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/8eaafbf4220a3cb099d7bd99c8d04dca7062236f/code-insider-arm64-1786123411.tar.gz"
         },
-        "version": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/780ea331b2861816fe6bb8215d812933c81df83b/code-insider-arm64-1785990096.tar.gz"
+        "version": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/8eaafbf4220a3cb099d7bd99c8d04dca7062236f/code-insider-arm64-1786123411.tar.gz"
     },
     "vscode-linux-arm64-stable": {
         "cargoLock": null,
@@ -238,11 +238,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-z2lu3fvI4htIM0N3U01ulbEC+M1nSbCnUyDAYMDUBdU=",
+            "sha256": "sha256-QPZdlGMiUvLjf9kKLERWynWwtAdugeqVMhpiTBwkyxw=",
             "type": "tarball",
-            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/780ea331b2861816fe6bb8215d812933c81df83b/code-insider-x64-1785990143.tar.gz"
+            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/8eaafbf4220a3cb099d7bd99c8d04dca7062236f/code-insider-x64-1786123385.tar.gz"
         },
-        "version": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/780ea331b2861816fe6bb8215d812933c81df83b/code-insider-x64-1785990143.tar.gz"
+        "version": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/8eaafbf4220a3cb099d7bd99c8d04dca7062236f/code-insider-x64-1786123385.tar.gz"
     },
     "vscode-linux-x64-stable": {
         "cargoLock": null,
