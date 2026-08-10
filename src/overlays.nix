@@ -7,6 +7,7 @@ rec {
     openwebstart
     obscura-browser
     clashx-meta
+    oh-my-pi
   ];
 
   vscode = final: prev: {
@@ -55,4 +56,10 @@ rec {
         generated = prev.callPackage ./generated.nix { };
       };
     };
+
+  oh-my-pi = final: prev: {
+    oh-my-pi = prev.callPackage ./oh-my-pi.nix {
+      generated = prev.callPackage ./generated-oh-my-pi.nix { };
+    };
+  };
 }

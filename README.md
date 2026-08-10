@@ -71,6 +71,7 @@ You can also use specific overlays for individual packages:
 - `.#overlays.vericert`: includes `vericert`
 - `.#overlays.verus`: includes `verus`
 - `.#overlays.obscura-browser`: includes `obscura-browser-bin`
+- `.#overlays.oh-my-pi`: includes `oh-my-pi`
 - `.#overlays.wallpaper`: includes `pops-wallpaper` and `nordic-wallpaper`
 
 ## Packages
@@ -102,6 +103,13 @@ Output: `.#packages.${system}.obscura-browser-bin`
 A lightweight headless browser for AI agents and web scraping. The
 package installs the corresponding native artifact from the upstream GitHub
 release and includes both the `obscura` and `obscura-worker` executables.
+
+### Oh My Pi
+
+Output: `.#packages.${system}.oh-my-pi`
+
+An AI coding agent for the terminal. The package installs the `omp` executable
+from the corresponding upstream release artifact.
 
 ### VS Code
 

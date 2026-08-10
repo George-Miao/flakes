@@ -1,0 +1,62 @@
+{
+    "oh-my-pi-darwin-arm64": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "oh-my-pi-darwin-arm64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-q0/yTIujrm/Z1LVJaclPRAjMMWZ19VNHKa5QLYyX33Q=",
+            "type": "url",
+            "url": "https://github.com/can1357/oh-my-pi/releases/download/v17.2.12/omp-darwin-arm64"
+        },
+        "version": "v17.2.12"
+    },
+    "oh-my-pi-darwin-x64": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "oh-my-pi-darwin-x64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-7eUWJYc7t+WSAHEevkS3dZGaGLRv6SeZWkH5MVqclqo=",
+            "type": "url",
+            "url": "https://github.com/can1357/oh-my-pi/releases/download/v17.2.12/omp-darwin-x64"
+        },
+        "version": "v17.2.12"
+    },
+    "oh-my-pi-linux-arm64": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "oh-my-pi-linux-arm64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-8Xbt+BdNslKr4apuhN8oThuDuN1+80rH+veISl4XKkw=",
+            "type": "url",
+            "url": "https://github.com/can1357/oh-my-pi/releases/download/v17.2.12/omp-linux-arm64"
+        },
+        "version": "v17.2.12"
+    },
+    "oh-my-pi-linux-x64": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "oh-my-pi-linux-x64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-bHUzG/CdWp6UM71ZKz7pk9dRoV1bdFDBozTMBoSZbzA=",
+            "type": "url",
+            "url": "https://github.com/can1357/oh-my-pi/releases/download/v17.2.12/omp-linux-x64"
+        },
+        "version": "v17.2.12"
+    }
+}

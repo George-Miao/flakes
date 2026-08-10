@@ -15,13 +15,15 @@ jobs:
       - uses: DeterminateSystems/nix-installer-action@main
       - uses: DeterminateSystems/magic-nix-cache-action@main
       - name: "nvfetcher generate"
-        run: nix-shell -p nvfetcher --command "nvfetcher -v --keep-going"
+        run: |
+          nix-shell -p nvfetcher --command "nvfetcher -v --keep-going"
+          nix-shell -p nvfetcher --command "nvfetcher -v --keep-going -c nvfetcher-oh-my-pi.toml -o _sources/oh-my-pi"
       - name: Check for changes
         id: check-change
         run: |
           nix-shell -p git-crypt
           set +e
-          git diff --quiet --exit-code _sources/generated.nix
+          git diff --quiet --exit-code _sources
           changed=$?
           echo "changed=$changed" >> $GITHUB_OUTPUT
       - name: Test build
