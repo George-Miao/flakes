@@ -71,26 +71,26 @@
   };
   verus-darwin-arm64 = {
     pname = "verus-darwin-arm64";
-    version = "0.2026.08.02.b677dd5";
+    version = "0.2026.08.09.92f466f";
     src = fetchTarball {
-      url = "https://github.com/verus-lang/verus/releases/download/release%2F0.2026.08.02.b677dd5/verus-0.2026.08.02.b677dd5-arm64-macos.zip";
-      sha256 = "sha256-GPClXpsi9orPh20jePxaiSEbf5m5wOkawpU4SvZT0Tc=";
+      url = "https://github.com/verus-lang/verus/releases/download/release%2F0.2026.08.09.92f466f/verus-0.2026.08.09.92f466f-arm64-macos.zip";
+      sha256 = "sha256-njBV4l0tigy572f1jIhoS0dXckRe2F2LFmNLPeBtdIw=";
     };
   };
   verus-darwin-x64 = {
     pname = "verus-darwin-x64";
-    version = "0.2026.08.02.b677dd5";
+    version = "0.2026.08.09.92f466f";
     src = fetchTarball {
-      url = "https://github.com/verus-lang/verus/releases/download/release%2F0.2026.08.02.b677dd5/verus-0.2026.08.02.b677dd5-x86-macos.zip";
-      sha256 = "sha256-BbFuliJfcKrwzp+UcZHZigpt5vRjoa5gmPT/1u6+QLo=";
+      url = "https://github.com/verus-lang/verus/releases/download/release%2F0.2026.08.09.92f466f/verus-0.2026.08.09.92f466f-x86-macos.zip";
+      sha256 = "sha256-rphXdCtSXSa0tSv2arB+inYE9PxBytcHQX1huW7u67A=";
     };
   };
   verus-linux-x64 = {
     pname = "verus-linux-x64";
-    version = "0.2026.08.02.b677dd5";
+    version = "0.2026.08.09.92f466f";
     src = fetchTarball {
-      url = "https://github.com/verus-lang/verus/releases/download/release%2F0.2026.08.02.b677dd5/verus-0.2026.08.02.b677dd5-x86-linux.zip";
-      sha256 = "sha256-Z8m5+fwFAviJcbsttcag6wkZphEws/IksIYGDssVQK4=";
+      url = "https://github.com/verus-lang/verus/releases/download/release%2F0.2026.08.09.92f466f/verus-0.2026.08.09.92f466f-x86-linux.zip";
+      sha256 = "sha256-sjcTMT1x37RUcTOJ4fBGi8ykXbMGlIP1zF+rrPr3wwE=";
     };
   };
   verusfmt = {
