@@ -11,12 +11,12 @@ and supports Linux and Darwin on x86_64 and aarch64.
 - `flake.nix` defines supported systems, package outputs, checks, and exported
   overlays.
 - `src/*.nix` contains hand-written package and overlay definitions.
-- `nvfetcher.toml` is the source of truth for dependencies maintained by
-  nvfetcher.
-- `_sources/generated.nix` and `_sources/generated.json` are generated files;
-  do not edit them by hand.
-- `src/generated.nix` is only a small adapter around the generated nvfetcher
-  expression.
+- `nvfetcher*.toml` files are the source of truth for dependencies maintained
+  by nvfetcher.
+- `_sources/**/generated.nix` and `_sources/**/generated.json` are generated
+  files; do not edit them by hand.
+- `src/generated*.nix` files are only small adapters around generated
+  nvfetcher expressions.
 - `vericert/` is a nested flake with its own pinned `nixpkgs` and lock file.
 - `.github/workflows/check.yml` runs the main flake check on all four supported
   platform families.
@@ -48,15 +48,20 @@ depend on or commit its contents.
 ## Updating generated sources
 
 Always use nvfetcher for package sources when it can represent the upstream.
-Add or update the source in `nvfetcher.toml` and consume it through
-`src/generated.nix`; use a hand-written fixed-output fetcher only when nvfetcher
-cannot support the source.
+Add or update the source in the relevant `nvfetcher*.toml` and consume it
+through the matching `src/generated*.nix`; use a hand-written fixed-output
+fetcher only when nvfetcher cannot support the source. Do not hard-code versions
+or fixed-output source hashes in hand-written package expressions.
 
-After editing `nvfetcher.toml`, regenerate both files under `_sources/` with:
+Edit the relevant `nvfetcher*.toml`, then regenerate its two files under
+`_sources/`. For the main source set, use:
 
 ```sh
 nix-shell -p nvfetcher --command "nvfetcher -v --keep-going"
 ```
+
+Package-specific source sets must pass their config and output directory, as
+documented alongside the config.
 
 Review the generated diff and commit the configuration and generated outputs
 together. Entries consumed through `generated` must retain names that match the
