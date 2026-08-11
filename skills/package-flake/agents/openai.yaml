@@ -1,0 +1,4 @@
+interface:
+  display_name: "Package Flake"
+  short_description: "Package released binaries in this Nix flake"
+  default_prompt: "Use $package-flake to package a released binary in this repository."
