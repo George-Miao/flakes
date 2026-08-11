@@ -24,6 +24,7 @@
       fetchSubmodules = false;
       sha256 = "sha256-clRGfUqKD4/v5bNj/lI5pKDdf6qraZXJBWZtBLLqF50=";
     };
+    date = "2025-12-31";
   };
   pop-wallpaper = {
     pname = "pop-wallpaper";
