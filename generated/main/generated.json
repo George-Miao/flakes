@@ -1,0 +1,121 @@
+{
+    "clashx-meta": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "clashx-meta",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-ZbLEhqjcb8AMWmU8REKalv0iSKncyHGhPzcEKw99Uo8=",
+            "type": "tarball",
+            "url": "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v1.4.43/ClashX.Meta.zip"
+        },
+        "version": "v1.4.43"
+    },
+    "nordic-wallpaper": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "nordic-wallpaper",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "linuxdotexe",
+            "repo": "nordic-wallpapers",
+            "rev": "7a8e3bcabafbefd1c5b19229841b9bf377a4b765",
+            "sha256": "sha256-clRGfUqKD4/v5bNj/lI5pKDdf6qraZXJBWZtBLLqF50=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "7a8e3bcabafbefd1c5b19229841b9bf377a4b765"
+    },
+    "pop-wallpaper": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "pop-wallpaper",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "George-Miao",
+            "repo": "wallpaper",
+            "rev": "f79c2e",
+            "sha256": "sha256-3VYnGGE/N8GWGWTCHYFQxMva1Ye8NIaByfzBCCyPUPU=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "f79c2e"
+    },
+    "verus-darwin-arm64": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "verus-darwin-arm64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-njBV4l0tigy572f1jIhoS0dXckRe2F2LFmNLPeBtdIw=",
+            "type": "tarball",
+            "url": "https://github.com/verus-lang/verus/releases/download/release%2F0.2026.08.09.92f466f/verus-0.2026.08.09.92f466f-arm64-macos.zip"
+        },
+        "version": "0.2026.08.09.92f466f"
+    },
+    "verus-darwin-x64": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "verus-darwin-x64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-rphXdCtSXSa0tSv2arB+inYE9PxBytcHQX1huW7u67A=",
+            "type": "tarball",
+            "url": "https://github.com/verus-lang/verus/releases/download/release%2F0.2026.08.09.92f466f/verus-0.2026.08.09.92f466f-x86-macos.zip"
+        },
+        "version": "0.2026.08.09.92f466f"
+    },
+    "verus-linux-x64": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "verus-linux-x64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-sjcTMT1x37RUcTOJ4fBGi8ykXbMGlIP1zF+rrPr3wwE=",
+            "type": "tarball",
+            "url": "https://github.com/verus-lang/verus/releases/download/release%2F0.2026.08.09.92f466f/verus-0.2026.08.09.92f466f-x86-linux.zip"
+        },
+        "version": "0.2026.08.09.92f466f"
+    },
+    "verusfmt": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "verusfmt",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "verus-lang",
+            "repo": "verusfmt",
+            "rev": "v0.7.2",
+            "sha256": "sha256-TE1Qyk5y8G/Kid6/BmUIMZ8Fr+y8GkLkRrzXGFHVe7I=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.7.2"
+    }
+}

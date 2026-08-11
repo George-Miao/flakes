@@ -1,0 +1,26 @@
+# Regenerate with:
+# nix-shell -p nvfetcher --command "nvfetcher -v --keep-going -c nvfetcher/vscode.toml -o generated/vscode"
+
+[vscode-linux-x64-stable]
+src.cmd = """curl -Ls -o /dev/null -w %{url_effective} 'https://update.code.visualstudio.com/latest/linux-x64/stable'"""
+fetch.tarball = "$ver"
+
+[vscode-linux-x64-insider]
+src.cmd = """curl -Ls -o /dev/null -w %{url_effective} 'https://update.code.visualstudio.com/latest/linux-x64/insider'"""
+fetch.tarball = "$ver"
+
+[vscode-linux-arm64-stable]
+src.cmd = """curl -Ls -o /dev/null -w %{url_effective} 'https://update.code.visualstudio.com/latest/linux-arm64/stable'"""
+fetch.tarball = "$ver"
+
+[vscode-linux-arm64-insider]
+src.cmd = """curl -Ls -o /dev/null -w %{url_effective} 'https://update.code.visualstudio.com/latest/linux-arm64/insider'"""
+fetch.tarball = "$ver"
+
+[vscode-darwin-stable]
+src.cmd = """curl -Ls -o /dev/null -w %{url_effective} 'https://update.code.visualstudio.com/latest/darwin/stable'"""
+fetch.tarball = "$ver"
+
+[vscode-darwin-insider]
+src.cmd = """curl -Ls -o /dev/null -w %{url_effective} 'https://update.code.visualstudio.com/latest/darwin/insider'"""
+fetch.tarball = "$ver"

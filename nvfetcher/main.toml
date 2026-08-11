@@ -1,0 +1,27 @@
+[nordic-wallpaper]
+src.git = "https://github.com/linuxdotexe/nordic-wallpapers"
+fetch.github = "linuxdotexe/nordic-wallpapers"
+
+[pop-wallpaper]
+src.github = "George-Miao/wallpaper"
+fetch.github = "George-Miao/wallpaper"
+
+[verus-linux-x64]
+src.cmd = """curl -s https://api.github.com/repos/verus-lang/verus/releases/latest | jq -r '.tag_name | split("/") | last'"""
+fetch.tarball = "https://github.com/verus-lang/verus/releases/download/release%2F$ver/verus-$ver-x86-linux.zip"
+
+[verus-darwin-x64]
+src.cmd = """curl -s https://api.github.com/repos/verus-lang/verus/releases/latest | jq -r '.tag_name | split("/") | last'"""
+fetch.tarball = "https://github.com/verus-lang/verus/releases/download/release%2F$ver/verus-$ver-x86-macos.zip"
+
+[verus-darwin-arm64]
+src.cmd = """curl -s https://api.github.com/repos/verus-lang/verus/releases/latest | jq -r '.tag_name | split("/") | last'"""
+fetch.tarball = "https://github.com/verus-lang/verus/releases/download/release%2F$ver/verus-$ver-arm64-macos.zip"
+
+[verusfmt]
+src.github = "verus-lang/verusfmt"
+fetch.github = "verus-lang/verusfmt"
+
+[clashx-meta]
+src.github = "MetaCubeX/ClashX.Meta"
+fetch.tarball = "https://github.com/MetaCubeX/ClashX.Meta/releases/download/$ver/ClashX.Meta.zip"

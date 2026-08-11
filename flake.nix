@@ -51,26 +51,35 @@
               let
                 openwebstart = pkgs.callPackage ./src/openwebstart.nix { };
                 generated = pkgs.callPackage ./src/generated.nix { };
-                generatedOhMyPi = pkgs.callPackage ./src/generated-oh-my-pi.nix { };
-                vscode = pkgs.callPackage ./src/vscode.nix { inherit generated; };
-                verus = pkgs.callPackage ./src/verus.nix { inherit generated; };
-                verusfmt = pkgs.callPackage ./src/verusfmt.nix { inherit generated craneLib; };
+                vscode = pkgs.callPackage ./src/vscode.nix { generated = generated.vscode; };
+                verus = pkgs.callPackage ./src/verus.nix { generated = generated.main; };
+                verusfmt = pkgs.callPackage ./src/verusfmt.nix {
+                  inherit craneLib;
+                  generated = generated.main;
+                };
                 obscura-browser = pkgs.callPackage ./src/obscura-browser.nix {
-                  inherit generated;
+                  generated = generated.obscura;
                 };
                 oh-my-pi = pkgs.callPackage ./src/oh-my-pi.nix {
-                  generated = generatedOhMyPi;
+                  generated = generated.oh-my-pi;
                 };
                 ns3 = pkgs.callPackage ./src/ns3.nix { };
-                clashx-meta = pkgs.callPackage ./src/clashx-meta.nix { inherit generated; };
+                clashx-meta = pkgs.callPackage ./src/clashx-meta.nix { generated = generated.main; };
+                orca = pkgs.callPackage ./src/orca.nix { generated = generated.orca; };
               in
               {
                 inherit (vscode) vscode vscode-insider;
                 inherit (obscura-browser) obscura-browser-bin;
-                inherit openwebstart verusfmt oh-my-pi ns3;
+                inherit
+                  openwebstart
+                  verusfmt
+                  oh-my-pi
+                  ns3
+                  orca
+                  ;
                 vericert = vericert.packages.${system}.vericert;
-                pop-wallpaper = generated.pop-wallpaper.src;
-                nordic-wallpaper = generated.nordic-wallpaper.src;
+                pop-wallpaper = generated.main.pop-wallpaper.src;
+                nordic-wallpaper = generated.main.nordic-wallpaper.src;
               }
               // (lib.optionalAttrs (system != "aarch64-linux") { inherit verus; })
               // (lib.optionalAttrs pkgs.stdenv.hostPlatform.isDarwin { inherit clashx-meta; });

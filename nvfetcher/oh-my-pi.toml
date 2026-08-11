@@ -1,5 +1,5 @@
 # Regenerate with:
-# nix-shell -p nvfetcher --command "nvfetcher -v --keep-going -c nvfetcher-oh-my-pi.toml -o _sources/oh-my-pi"
+# nix-shell -p nvfetcher --command "nvfetcher -v --keep-going -c nvfetcher/oh-my-pi.toml -o generated/oh-my-pi"
 
 [oh-my-pi-darwin-arm64]
 src.github = "can1357/oh-my-pi"

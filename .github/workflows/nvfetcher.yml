@@ -15,15 +15,13 @@ jobs:
       - uses: DeterminateSystems/nix-installer-action@main
       - uses: DeterminateSystems/magic-nix-cache-action@main
       - name: "nvfetcher generate"
-        run: |
-          nix-shell -p nvfetcher --command "nvfetcher -v --keep-going"
-          nix-shell -p nvfetcher --command "nvfetcher -v --keep-going -c nvfetcher-oh-my-pi.toml -o _sources/oh-my-pi"
+        run: ./scripts/update-nvfetcher.sh
       - name: Check for changes
         id: check-change
         run: |
           nix-shell -p git-crypt
           set +e
-          git diff --quiet --exit-code _sources
+          git diff --quiet --exit-code generated
           changed=$?
           echo "changed=$changed" >> $GITHUB_OUTPUT
       - name: Test build
@@ -36,7 +34,7 @@ jobs:
         run: |
           git config --local user.email "action@miao.dev"
           git config --local user.name "nvfetcher action"
-          git commit _sources -m "Update generated dependencies"
+          git commit generated -m "Update generated dependencies"
       - name: Push changes
         if: "${{ steps.check-change.outputs.changed == 1 }}"
         uses: ad-m/github-push-action@master

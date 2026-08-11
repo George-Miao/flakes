@@ -1,0 +1,58 @@
+{
+    "obscura-browser-bin-darwin-arm64": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "obscura-browser-bin-darwin-arm64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-p7iG/YMNBRnDbv2Jd7Wsy/Ysyjvo8Zl/JaJWKOWuKeg=",
+            "type": "tarball",
+            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.0/obscura-aarch64-macos.tar.gz"
+        },
+        "version": "v0.2.0"
+    },
+    "obscura-browser-bin-darwin-x64": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "obscura-browser-bin-darwin-x64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-sBCpOT2Th74pDDg0Y16+cRpCpvq/xJohjEZqlmc3qRg=",
+            "type": "tarball",
+            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.0/obscura-x86_64-macos.tar.gz"
+        },
+        "version": "v0.2.0"
+    },
+    "obscura-browser-bin-linux-arm64": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "obscura-browser-bin-linux-arm64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-uF/PZ6/wAj0KfRSV24pdee6psTaC4FQigm3WpSXbqIg=",
+            "type": "tarball",
+            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.0/obscura-aarch64-linux.tar.gz"
+        },
+        "version": "v0.2.0"
+    },
+    "obscura-browser-bin-linux-x64": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "obscura-browser-bin-linux-x64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-9U/k0wvl487RKNMcqmkvUyMVw06tjKh0/JhpVNXUvp0=",
+            "type": "tarball",
+            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.0/obscura-x86_64-linux.tar.gz"
+        },
+        "version": "v0.2.0"
+    }
+}

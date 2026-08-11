@@ -72,6 +72,7 @@ You can also use specific overlays for individual packages:
 - `.#overlays.verus`: includes `verus`
 - `.#overlays.obscura-browser`: includes `obscura-browser-bin`
 - `.#overlays.oh-my-pi`: includes `oh-my-pi`
+- `.#overlays.orca`: includes `orca`
 - `.#overlays.wallpaper`: includes `pops-wallpaper` and `nordic-wallpaper`
 
 ## Packages
@@ -110,6 +111,14 @@ Output: `.#packages.${system}.oh-my-pi`
 
 An AI coding agent for the terminal. The package installs the `omp` executable
 from the corresponding upstream release artifact.
+
+### Orca
+
+Output: `.#packages.${system}.orca`
+
+An agent development environment for orchestrating coding agents. The package
+uses Orca's released AppImages on Linux and signed application bundles on macOS,
+with native artifacts for x86_64 and aarch64.
 
 ### VS Code
 
