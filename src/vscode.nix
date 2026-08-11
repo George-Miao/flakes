@@ -14,6 +14,17 @@ let
       "linux-arm64"
     else
       "linux-x64";
+  ripgrepPaths =
+    if stdenv.hostPlatform.isDarwin then
+      {
+        nixpkgs = "Contents/Resources/app/node_modules/@vscode/ripgrep/bin/rg";
+        insiders = "Contents/Resources/app/node_modules.asar.unpacked/@vscode/ripgrep-universal/bin/darwin-x64/rg";
+      }
+    else
+      {
+        nixpkgs = "resources/app/node_modules/@vscode/ripgrep/bin/rg";
+        insiders = "resources/app/node_modules/@vscode/ripgrep-universal/bin/${vsc-system}/rg";
+      };
   platformDeps =
     if stdenv.hostPlatform.isLinux then
       [
@@ -44,6 +55,7 @@ in
           buildInputs = old.buildInputs ++ extraBuildInputs;
           src = generated."vscode-${vsc-system}-insider".src;
           version = "latest";
+          postPatch = builtins.replaceStrings [ ripgrepPaths.nixpkgs ] [ ripgrepPaths.insiders ] old.postPatch;
         }
       );
 }
