@@ -7,11 +7,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-ZbLEhqjcb8AMWmU8REKalv0iSKncyHGhPzcEKw99Uo8=",
+            "sha256": "sha256-THnehpWiChbzpcKN52DX9ZWfhavAPeXFXZ9ygGs3TSQ=",
             "type": "tarball",
-            "url": "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v1.4.43/ClashX.Meta.zip"
+            "url": "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v1.4.44/ClashX.Meta.zip"
         },
-        "version": "v1.4.43"
+        "version": "v1.4.44"
     },
     "nordic-wallpaper": {
         "cargoLock": null,
@@ -63,11 +63,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-njBV4l0tigy572f1jIhoS0dXckRe2F2LFmNLPeBtdIw=",
+            "sha256": "sha256-9q69GKvBow027R2eygPtq3u2yC2DB4wHpgyxiVP8U7s=",
             "type": "tarball",
-            "url": "https://github.com/verus-lang/verus/releases/download/release%2F0.2026.08.09.92f466f/verus-0.2026.08.09.92f466f-arm64-macos.zip"
+            "url": "https://github.com/verus-lang/verus/releases/download/release%2F0.2026.08.15.7d4628a/verus-0.2026.08.15.7d4628a-arm64-macos.zip"
         },
-        "version": "0.2026.08.09.92f466f"
+        "version": "0.2026.08.15.7d4628a"
     },
     "verus-darwin-x64": {
         "cargoLock": null,
@@ -77,11 +77,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-rphXdCtSXSa0tSv2arB+inYE9PxBytcHQX1huW7u67A=",
+            "sha256": "sha256-Hg2ODHEdZKKJJLhiz3Hsa9TQaYnscoGo2sgWfmLKxb8=",
             "type": "tarball",
-            "url": "https://github.com/verus-lang/verus/releases/download/release%2F0.2026.08.09.92f466f/verus-0.2026.08.09.92f466f-x86-macos.zip"
+            "url": "https://github.com/verus-lang/verus/releases/download/release%2F0.2026.08.15.7d4628a/verus-0.2026.08.15.7d4628a-x86-macos.zip"
         },
-        "version": "0.2026.08.09.92f466f"
+        "version": "0.2026.08.15.7d4628a"
     },
     "verus-linux-x64": {
         "cargoLock": null,
@@ -91,11 +91,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-sjcTMT1x37RUcTOJ4fBGi8ykXbMGlIP1zF+rrPr3wwE=",
+            "sha256": "sha256-7oIjriBKchgZzM3xSswgVyjvXqy5u19cI6yTCMjV7ck=",
             "type": "tarball",
-            "url": "https://github.com/verus-lang/verus/releases/download/release%2F0.2026.08.09.92f466f/verus-0.2026.08.09.92f466f-x86-linux.zip"
+            "url": "https://github.com/verus-lang/verus/releases/download/release%2F0.2026.08.15.7d4628a/verus-0.2026.08.15.7d4628a-x86-linux.zip"
         },
-        "version": "0.2026.08.09.92f466f"
+        "version": "0.2026.08.15.7d4628a"
     },
     "verusfmt": {
         "cargoLock": null,
