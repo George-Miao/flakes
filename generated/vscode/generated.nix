@@ -8,10 +8,10 @@
 {
   vscode-darwin-insider = {
     pname = "vscode-darwin-insider";
-    version = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/f558c80ef1404ffc7c4d57ce2deef1a1d9fda4be/VSCode-darwin.zip";
+    version = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/1f625adb84abf41cdff31f40f66e58a222f033f6/VSCode-darwin.zip";
     src = fetchTarball {
-      url = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/f558c80ef1404ffc7c4d57ce2deef1a1d9fda4be/VSCode-darwin.zip";
-      sha256 = "sha256-+SNoecDxQ0Jm6N1Exv9x1b6/FljfM/QbkDFVRxaHIyM=";
+      url = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/1f625adb84abf41cdff31f40f66e58a222f033f6/VSCode-darwin.zip";
+      sha256 = "sha256-36C51gWMKn4iUEjQGwTz9HVZWZ+2OFkOBzktUFTETNA=";
     };
   };
   vscode-darwin-stable = {
@@ -24,10 +24,10 @@
   };
   vscode-linux-arm64-insider = {
     pname = "vscode-linux-arm64-insider";
-    version = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/f558c80ef1404ffc7c4d57ce2deef1a1d9fda4be/code-insider-arm64-1788233817.tar.gz";
+    version = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/1f625adb84abf41cdff31f40f66e58a222f033f6/code-insider-arm64-1788326123.tar.gz";
     src = fetchTarball {
-      url = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/f558c80ef1404ffc7c4d57ce2deef1a1d9fda4be/code-insider-arm64-1788233817.tar.gz";
-      sha256 = "sha256-0YESs1IHi3NnMHm09Re+dfI5oZAxeUhEr+hlIcsr24Q=";
+      url = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/1f625adb84abf41cdff31f40f66e58a222f033f6/code-insider-arm64-1788326123.tar.gz";
+      sha256 = "sha256-M2LFMrcfBP5BWRo6+aE5jHUeBnCeOXUFofdS7h+BfFY=";
     };
   };
   vscode-linux-arm64-stable = {
@@ -40,10 +40,10 @@
   };
   vscode-linux-x64-insider = {
     pname = "vscode-linux-x64-insider";
-    version = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/f558c80ef1404ffc7c4d57ce2deef1a1d9fda4be/code-insider-x64-1788233845.tar.gz";
+    version = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/1f625adb84abf41cdff31f40f66e58a222f033f6/code-insider-x64-1788326117.tar.gz";
     src = fetchTarball {
-      url = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/f558c80ef1404ffc7c4d57ce2deef1a1d9fda4be/code-insider-x64-1788233845.tar.gz";
-      sha256 = "sha256-3n93JJpM447zIGugJM0xaBnsngF6QHZLJdeWhQLxVbQ=";
+      url = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/1f625adb84abf41cdff31f40f66e58a222f033f6/code-insider-x64-1788326117.tar.gz";
+      sha256 = "sha256-wiKir0JLHB0XLVodpbnP8x10hLF/f4pn7zeHouhV1zo=";
     };
   };
   vscode-linux-x64-stable = {
