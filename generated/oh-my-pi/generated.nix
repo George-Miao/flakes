@@ -8,34 +8,34 @@
 {
   oh-my-pi-darwin-arm64 = {
     pname = "oh-my-pi-darwin-arm64";
-    version = "v18.2.11";
+    version = "v18.3.1";
     src = fetchurl {
-      url = "https://github.com/can1357/oh-my-pi/releases/download/v18.2.11/omp-darwin-arm64";
-      sha256 = "sha256-+u/9V2dM/6JT4vEn1y3f5tzYHh65HrXSFIkT5ioBCig=";
+      url = "https://github.com/can1357/oh-my-pi/releases/download/v18.3.1/omp-darwin-arm64";
+      sha256 = "sha256-Z7gHqZRUpNjhz5gtznszQ7LC/BSPM+QD2/s/EEmyJXA=";
     };
   };
   oh-my-pi-darwin-x64 = {
     pname = "oh-my-pi-darwin-x64";
-    version = "v18.2.11";
+    version = "v18.3.1";
     src = fetchurl {
-      url = "https://github.com/can1357/oh-my-pi/releases/download/v18.2.11/omp-darwin-x64";
-      sha256 = "sha256-EnFxchMSWmDbeIK0a7VeH/cPeSmugB/xF29zJDODX5g=";
+      url = "https://github.com/can1357/oh-my-pi/releases/download/v18.3.1/omp-darwin-x64";
+      sha256 = "sha256-9+5SzE2XwMOvSycd/5QOK+Mf4eItT9El7abgwbuX1bA=";
     };
   };
   oh-my-pi-linux-arm64 = {
     pname = "oh-my-pi-linux-arm64";
-    version = "v18.2.11";
+    version = "v18.3.1";
     src = fetchurl {
-      url = "https://github.com/can1357/oh-my-pi/releases/download/v18.2.11/omp-linux-arm64";
-      sha256 = "sha256-wRX5WgoAgdNySjyHgjH7jDsv2yWtWtbDsw0VKoKzk54=";
+      url = "https://github.com/can1357/oh-my-pi/releases/download/v18.3.1/omp-linux-arm64";
+      sha256 = "sha256-lbnj3Dwglohb4snJI71Fuzv4HRcjZ9t+cJCTZykmHiw=";
     };
   };
   oh-my-pi-linux-x64 = {
     pname = "oh-my-pi-linux-x64";
-    version = "v18.2.11";
+    version = "v18.3.1";
     src = fetchurl {
-      url = "https://github.com/can1357/oh-my-pi/releases/download/v18.2.11/omp-linux-x64";
-      sha256 = "sha256-l885VXvz2YMn3UyYFDgLfmvLduQRae3ZsP8wQkxzOio=";
+      url = "https://github.com/can1357/oh-my-pi/releases/download/v18.3.1/omp-linux-x64";
+      sha256 = "sha256-CAbfYCvyu5sgLRUiBLG+9kUOtry/vzHWbjdn0buzs6c=";
     };
   };
 }
