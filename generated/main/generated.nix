@@ -63,13 +63,13 @@
   };
   verusfmt = {
     pname = "verusfmt";
-    version = "v0.7.3";
+    version = "v0.7.4";
     src = fetchFromGitHub {
       owner = "verus-lang";
       repo = "verusfmt";
-      rev = "v0.7.3";
+      rev = "v0.7.4";
       fetchSubmodules = false;
-      sha256 = "sha256-bPlCa5/57pt1/iTSzX2xVmi3k8VoRH+/mkklxJjw/8w=";
+      sha256 = "sha256-Zaw90tm6R8hhcwLGyotNmoW86ZHQPmn/iqJvHqxXCbM=";
     };
   };
 }
