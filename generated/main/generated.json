@@ -7,11 +7,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-Iau01xIa+207mAbBGaKhM2vh2/O6tt/yS9b7/ItEiyQ=",
+            "sha256": "sha256-THsunVEz5NOat7fBmZMVgQBGW/cH5uYOYFR4lUVqV3Q=",
             "type": "tarball",
-            "url": "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v1.4.45/ClashX.Meta.zip"
+            "url": "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v1.4.46/ClashX.Meta.zip"
         },
-        "version": "v1.4.45"
+        "version": "v1.4.46"
     },
     "nordic-wallpaper": {
         "cargoLock": null,
