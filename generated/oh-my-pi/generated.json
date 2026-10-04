@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Vgi6FwWugIH0vO2bVLWDdS0Fkm/5xjd5qoZqTBPUOq0=",
+            "sha256": "sha256-v38g++OkHz+unLP4xb/lJ5fO0nLbfJGiBbCr+R8UTxU=",
             "type": "url",
-            "url": "https://github.com/can1357/oh-my-pi/releases/download/v18.5.0/omp-darwin-arm64"
+            "url": "https://github.com/can1357/oh-my-pi/releases/download/v18.6.0/omp-darwin-arm64"
         },
-        "version": "v18.5.0"
+        "version": "v18.6.0"
     },
     "oh-my-pi-darwin-x64": {
         "cargoLock": null,
@@ -23,11 +23,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-vgGyIT12M7cWvxglDH73Vu4pER39dsyrxC5+OzXTW0s=",
+            "sha256": "sha256-m0XpihyUNviahFm4nvueJgde27DOrZVCOz9PGagNAOs=",
             "type": "url",
-            "url": "https://github.com/can1357/oh-my-pi/releases/download/v18.5.0/omp-darwin-x64"
+            "url": "https://github.com/can1357/oh-my-pi/releases/download/v18.6.0/omp-darwin-x64"
         },
-        "version": "v18.5.0"
+        "version": "v18.6.0"
     },
     "oh-my-pi-linux-arm64": {
         "cargoLock": null,
@@ -38,11 +38,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-EkSGDFi7aKOkU5DUky5ceYMYPsjBLLaEjBr9cJ3jigc=",
+            "sha256": "sha256-VCCD/kKmFpVlhhpO6RGPvtZNCck0aLaQfmAWzHbvANE=",
             "type": "url",
-            "url": "https://github.com/can1357/oh-my-pi/releases/download/v18.5.0/omp-linux-arm64"
+            "url": "https://github.com/can1357/oh-my-pi/releases/download/v18.6.0/omp-linux-arm64"
         },
-        "version": "v18.5.0"
+        "version": "v18.6.0"
     },
     "oh-my-pi-linux-x64": {
         "cargoLock": null,
@@ -53,10 +53,10 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-uEE+bghaQjx6mx17wCXCr3lJI7a2xXMwowljm2F2yKE=",
+            "sha256": "sha256-hExkDGIOxMFSq+Szc2BJ+WMgXaUOnne9m98qmBpurVU=",
             "type": "url",
-            "url": "https://github.com/can1357/oh-my-pi/releases/download/v18.5.0/omp-linux-x64"
+            "url": "https://github.com/can1357/oh-my-pi/releases/download/v18.6.0/omp-linux-x64"
         },
-        "version": "v18.5.0"
+        "version": "v18.6.0"
     }
 }
