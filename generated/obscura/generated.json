@@ -7,11 +7,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-GdQUyKeaG/yrX4LIKWKddFShRcFYRpe4SadpbJKOkhs=",
+            "sha256": "sha256-Iq2JrU22GY5RLnGg7QXG9z81r9si8GjdkVZUIgyQK10=",
             "type": "tarball",
-            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.4/obscura-aarch64-macos.tar.gz"
+            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.5/obscura-aarch64-macos.tar.gz"
         },
-        "version": "v0.2.4"
+        "version": "v0.2.5"
     },
     "obscura-browser-bin-darwin-x64": {
         "cargoLock": null,
@@ -21,11 +21,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-RhYCV7bhMcXUENw3TNrC/40PFfuG5m5f8G+97V/sBVk=",
+            "sha256": "sha256-fTiafo78Y9EE20rPoT6UBRq9zhr2magPG8Zt17qlSpM=",
             "type": "tarball",
-            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.4/obscura-x86_64-macos.tar.gz"
+            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.5/obscura-x86_64-macos.tar.gz"
         },
-        "version": "v0.2.4"
+        "version": "v0.2.5"
     },
     "obscura-browser-bin-linux-arm64": {
         "cargoLock": null,
@@ -35,11 +35,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-nBLwT3d7ZY7N73XvJb4tc3jvuzah5DcU7sUBLFDF+q0=",
+            "sha256": "sha256-S/nuJYtvT/BrAAhwsxUzCsgHX9VSBe26W7ysc9PdrRI=",
             "type": "tarball",
-            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.4/obscura-aarch64-linux.tar.gz"
+            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.5/obscura-aarch64-linux.tar.gz"
         },
-        "version": "v0.2.4"
+        "version": "v0.2.5"
     },
     "obscura-browser-bin-linux-x64": {
         "cargoLock": null,
@@ -49,10 +49,10 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-IJqqC6JustAMA0wJGU7VEYSPRJCABOQdoF7MimTExh0=",
+            "sha256": "sha256-6Fi8vAn/pg8cpVoZnLGnORUYpL655cl82L0oL4vY44U=",
             "type": "tarball",
-            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.4/obscura-x86_64-linux.tar.gz"
+            "url": "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.5/obscura-x86_64-linux.tar.gz"
         },
-        "version": "v0.2.4"
+        "version": "v0.2.5"
     }
 }
