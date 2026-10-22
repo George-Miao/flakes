@@ -8,10 +8,10 @@
 {
   clashx-meta = {
     pname = "clashx-meta";
-    version = "v1.4.46";
+    version = "v1.4.47";
     src = fetchTarball {
-      url = "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v1.4.46/ClashX.Meta.zip";
-      sha256 = "sha256-THsunVEz5NOat7fBmZMVgQBGW/cH5uYOYFR4lUVqV3Q=";
+      url = "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v1.4.47/ClashX.Meta.zip";
+      sha256 = "sha256-WIWqHcZrEcLeh4Eo5PUK5ZqyF5dtFMthX/xOy1pIDNY=";
     };
   };
   nordic-wallpaper = {
