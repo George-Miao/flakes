@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-mkt6MnfFrk2SkbaEsi8PHwC5U/6xFzdFVFq+C1vywnQ=",
+            "sha256": "sha256-WocPO+REq870wU/VOgyzmHROek9KoQU3bugQ0ZXjN4A=",
             "type": "url",
             "url": "https://github.com/stablyai/orca/releases/latest/download/orca-macos-arm64.dmg"
         },
-        "version": "v1.4.237"
+        "version": "v1.4.239"
     },
     "orca-bin-darwin-x64": {
         "cargoLock": null,
@@ -23,11 +23,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Dpr2DOUcDXplMsdR5as8x3xpsko4k43CVsv1+Tv/CbA=",
+            "sha256": "sha256-45n5ekS04JYm2PsgAgOAtHKUUCXMH3HhrERVnwta4jk=",
             "type": "url",
             "url": "https://github.com/stablyai/orca/releases/latest/download/orca-macos-x64.dmg"
         },
-        "version": "v1.4.237"
+        "version": "v1.4.239"
     },
     "orca-bin-linux-arm64": {
         "cargoLock": null,
@@ -38,11 +38,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-4Tu/RIYuCXRehOOgoaVm7yVVMTyJ9aoHkON3rh6lEis=",
+            "sha256": "sha256-8qsjH+8CKhvkvXf/naVkcJL+/NqUU/EKIFD75QKTBd8=",
             "type": "url",
             "url": "https://github.com/stablyai/orca/releases/latest/download/orca-linux-arm64.AppImage"
         },
-        "version": "v1.4.237"
+        "version": "v1.4.239"
     },
     "orca-bin-linux-x64": {
         "cargoLock": null,
@@ -53,10 +53,10 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-waZj6I2nCh/prgIawagq2tK92ugl+dcWU57ufmnH7yk=",
+            "sha256": "sha256-nBC1SLUw4I/BI6RnRqo7+mbhXjSfqQFKdaKt3FxPJs0=",
             "type": "url",
             "url": "https://github.com/stablyai/orca/releases/latest/download/orca-linux.AppImage"
         },
-        "version": "v1.4.237"
+        "version": "v1.4.239"
     }
 }
