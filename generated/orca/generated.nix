@@ -8,34 +8,34 @@
 {
   orca-bin-darwin-arm64 = {
     pname = "orca-bin-darwin-arm64";
-    version = "v1.4.243";
+    version = "v1.4.244";
     src = fetchurl {
       url = "https://github.com/stablyai/orca/releases/latest/download/orca-macos-arm64.dmg";
-      sha256 = "sha256-sNAwp/O6CElnfk762SwK9j7yaDMsJLF2353deh9aZVE=";
+      sha256 = "sha256-O42jiG3fU4Hq91a8xHsVvSgpCC73l7RzlGdMUamnJ7o=";
     };
   };
   orca-bin-darwin-x64 = {
     pname = "orca-bin-darwin-x64";
-    version = "v1.4.243";
+    version = "v1.4.244";
     src = fetchurl {
       url = "https://github.com/stablyai/orca/releases/latest/download/orca-macos-x64.dmg";
-      sha256 = "sha256-rAlCYcs0Q5LWolNskBwxK4UBPt2YbNm262JVTb1Gz+4=";
+      sha256 = "sha256-mW973McNV1UD8eWdFBzBMyyYvXITF4Y96yCJCF2HP04=";
     };
   };
   orca-bin-linux-arm64 = {
     pname = "orca-bin-linux-arm64";
-    version = "v1.4.243";
+    version = "v1.4.244";
     src = fetchurl {
       url = "https://github.com/stablyai/orca/releases/latest/download/orca-linux-arm64.AppImage";
-      sha256 = "sha256-PpNCCDbUA44a27tSv0lo+XCY0CUCJhMHG3mnKww01nI=";
+      sha256 = "sha256-ukUl9ZK+Wfd/1szj/ov6zne/B9vlxWAlnW1W4hJ0vTE=";
     };
   };
   orca-bin-linux-x64 = {
     pname = "orca-bin-linux-x64";
-    version = "v1.4.243";
+    version = "v1.4.244";
     src = fetchurl {
       url = "https://github.com/stablyai/orca/releases/latest/download/orca-linux.AppImage";
-      sha256 = "sha256-KsxLKBVzjmreUEKWEIb9Fh8KLx4R7xDQ1A1cO82zF/g=";
+      sha256 = "sha256-pSWXv0a9aKBXEVwxm2cCbWZmLlYq21XSUqilEaXxIhQ=";
     };
   };
 }
