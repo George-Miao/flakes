@@ -52,6 +52,7 @@
                 generated = pkgs.callPackage ./src/generated.nix { };
                 vscode = pkgs.callPackage ./src/vscode.nix { generated = generated.vscode; };
                 verus = pkgs.callPackage ./src/verus.nix { generated = generated.main; };
+                verit = pkgs.callPackage ./src/verit.nix { generated = generated.main; };
                 verusfmt = pkgs.callPackage ./src/verusfmt.nix {
                   inherit craneLib;
                   generated = generated.main;
@@ -84,6 +85,7 @@
                 inherit
                   openwebstart
                   verusfmt
+                  verit
                   oh-my-pi
                   ns3
                   orca

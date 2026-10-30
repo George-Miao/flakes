@@ -45,6 +45,14 @@
       sha256 = "sha256-3VYnGGE/N8GWGWTCHYFQxMva1Ye8NIaByfzBCCyPUPU=";
     };
   };
+  verit = {
+    pname = "verit";
+    version = "2021.06.2";
+    src = fetchurl {
+      url = "https://www.verit-solver.org/download/2021.06.2/verit-2021.06.2-rmx.tar.gz";
+      sha256 = "sha256-QrEf5rkdo8Y5DPAbZszA1beCdOjMB8RohBn0qG3fW/o=";
+    };
+  };
   verus-darwin-arm64 = {
     pname = "verus-darwin-arm64";
     version = "0.2026.10.26.d17fbd0";

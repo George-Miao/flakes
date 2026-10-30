@@ -87,6 +87,13 @@ let
     };
   };
 
+  veritPackage = final: prev: {
+    verit = prev.callPackage ./verit.nix {
+      generated = final._flakesGenerated.main;
+      verit = prev.verit;
+    };
+  };
+
   withGenerated =
     overlay:
     lib.composeManyExtensions [
@@ -109,6 +116,7 @@ rec {
     breezexCursorPackage
     bluetoothManagerSidebarPackage
     xcharterPackage
+    veritPackage
   ];
 
   vscode = withGenerated vscodePackage;
@@ -140,4 +148,6 @@ rec {
   bluetooth-manager-sidebar = withGenerated bluetoothManagerSidebarPackage;
 
   xcharter = withGenerated xcharterPackage;
+
+  verit = withGenerated veritPackage;
 }

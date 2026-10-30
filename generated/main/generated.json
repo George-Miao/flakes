@@ -70,6 +70,21 @@
         },
         "version": "f79c2e"
     },
+    "verit": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "verit",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-QrEf5rkdo8Y5DPAbZszA1beCdOjMB8RohBn0qG3fW/o=",
+            "type": "url",
+            "url": "https://www.verit-solver.org/download/2021.06.2/verit-2021.06.2-rmx.tar.gz"
+        },
+        "version": "2021.06.2"
+    },
     "verus-darwin-arm64": {
         "cargoLock": null,
         "date": null,

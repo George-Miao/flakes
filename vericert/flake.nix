@@ -27,13 +27,11 @@
                   hash = "sha256-mKB9F/rMQpi+yI1AKcRdY6GUsC2nomMBSz0KC70Tkc0=";
                   fetchSubmodules = true;
                 };
-                veriT = pkgs.veriT.overrideAttrs (oA: {
-                  src = pkgs.fetchurl {
-                    url = "https://verit.loria.fr/download/tip/verit-2021.06-40-gc20206d-rmx.tar.gz";
-                    sha256 = "sha256-0XQdimpQ6iNrObglZmASKXAEwZ7JprkRODQrudE1mAs=";
-                  };
-                  meta.broken = false;
-                });
+                generated = pkgs.callPackage ../generated/main/generated.nix { };
+                veriT = pkgs.callPackage ../src/verit.nix {
+                  inherit generated;
+                  verit = pkgs.veriT;
+                };
                 arch = if pkgs.stdenv.hostPlatform.isx86_64 then "x86" else "aarch64";
                 coq = pkgs.coq_8_17;
                 inputPkgs = with pkgs; [

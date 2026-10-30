@@ -5,6 +5,7 @@ A collection of Nix flakes for various projects and tools.
 This repository uses [nvfetcher](https://github.com/berberman/nvfetcher) to track upstream releases and update package sources automatically daily.
 
 - [Vericert](#vericert)
+- [veriT](#verit)
 - [Verus](#verus)
 - [Verusfmt](#verusfmt)
 - [OpenWebStart](#openwebstart)
@@ -95,6 +96,7 @@ You can also use specific overlays for individual packages:
 - `.#overlays.default`: combines the overlays below, except `verus`
 - `.#overlays.vscode`: includes `vscode` and `vscode-insider`
 - `.#overlays.vericert`: includes `vericert`
+- `.#overlays.verit`: includes `verit`
 - `.#overlays.verus`: includes `verus` and `verusfmt`
 - `.#overlays.openwebstart`: includes `openwebstart`
 - `.#overlays.clashx-meta`: includes `clashx-meta` on macOS
@@ -117,6 +119,14 @@ A formally verified high-level synthesis (HLS) tool that compiles C to Verilog w
 
 > [!NOTE]
 > Vericert is old and requires a specific environment to be built correctly, therefore it pulls in its own nixpkgs. Redirect top-level flake's input will not change the nixpkgs used to build vericert.
+>
+> Its veriT dependency uses the stable 2021.06.2 release from the current upstream site.
+
+### [veriT](https://www.verit-solver.org/)
+
+Output: `.#packages.${system}.verit`
+
+An SMT solver with proof output, also used by Vericert.
 
 ### [Verus](https://github.com/verus-lang/verus)
 

@@ -35,3 +35,7 @@ fetch.url = "https://mirrors.ctan.org/fonts/xcharter.zip"
 src.github = "Relz/bluetooth-manager-sidebar"
 src.prefix = "v"
 fetch.url = "https://github.com/Relz/bluetooth-manager-sidebar/releases/download/v$ver/bm-sidebar_$ver-1_amd64.deb"
+
+[verit]
+src.manual = "2021.06.2"
+fetch.url = "https://www.verit-solver.org/download/$ver/verit-$ver-rmx.tar.gz"
