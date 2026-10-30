@@ -6,20 +6,20 @@
   dockerTools,
 }:
 {
-  vscode-darwin-insider = {
-    pname = "vscode-darwin-insider";
-    version = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/206844b5537c1b7582f6e81b41e1c5402c7e7fbc/VSCode-darwin.zip";
+  vscode-darwin-arm64-insider = {
+    pname = "vscode-darwin-arm64-insider";
+    version = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/f8c98dc6a2efcf8e86977254e1d4cf56b2542dbc/VSCode-darwin-arm64.zip";
     src = fetchTarball {
-      url = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/206844b5537c1b7582f6e81b41e1c5402c7e7fbc/VSCode-darwin.zip";
-      sha256 = "sha256-suMicbkJK7YLdpSi0w7FIcQtfx0wf/9gwkbVIxo0H/s=";
+      url = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/f8c98dc6a2efcf8e86977254e1d4cf56b2542dbc/VSCode-darwin-arm64.zip";
+      sha256 = "sha256-/b77KHM6mu+4uoZtydVNs1cTcC0L6Fzs1LjfkD/3WIQ=";
     };
   };
-  vscode-darwin-stable = {
-    pname = "vscode-darwin-stable";
-    version = "https://vscode.download.prss.microsoft.com/dbazure/download/stable/2c33b50b16c472efe58357d1d2a8a5414bc23fbf/VSCode-darwin.zip";
+  vscode-darwin-arm64-stable = {
+    pname = "vscode-darwin-arm64-stable";
+    version = "https://vscode.download.prss.microsoft.com/dbazure/download/stable/2c33b50b16c472efe58357d1d2a8a5414bc23fbf/VSCode-darwin-arm64.zip";
     src = fetchTarball {
-      url = "https://vscode.download.prss.microsoft.com/dbazure/download/stable/2c33b50b16c472efe58357d1d2a8a5414bc23fbf/VSCode-darwin.zip";
-      sha256 = "sha256-BkmYFn+UydujQPf+3v0N4h55bNIRf8x7hm5cNvVMhsY=";
+      url = "https://vscode.download.prss.microsoft.com/dbazure/download/stable/2c33b50b16c472efe58357d1d2a8a5414bc23fbf/VSCode-darwin-arm64.zip";
+      sha256 = "sha256-0woOoYufTb11QdJxdwHP8WhAx77gehG8Yylqo8jdaCo=";
     };
   };
   vscode-linux-arm64-insider = {

@@ -17,10 +17,10 @@ fetch.tarball = "$ver"
 src.cmd = """curl -Ls -o /dev/null -w %{url_effective} 'https://update.code.visualstudio.com/latest/linux-arm64/insider'"""
 fetch.tarball = "$ver"
 
-[vscode-darwin-stable]
-src.cmd = """curl -Ls -o /dev/null -w %{url_effective} 'https://update.code.visualstudio.com/latest/darwin/stable'"""
+[vscode-darwin-arm64-stable]
+src.cmd = """curl -Ls -o /dev/null -w %{url_effective} 'https://update.code.visualstudio.com/latest/darwin-arm64/stable'"""
 fetch.tarball = "$ver"
 
-[vscode-darwin-insider]
-src.cmd = """curl -Ls -o /dev/null -w %{url_effective} 'https://update.code.visualstudio.com/latest/darwin/insider'"""
+[vscode-darwin-arm64-insider]
+src.cmd = """curl -Ls -o /dev/null -w %{url_effective} 'https://update.code.visualstudio.com/latest/darwin-arm64/insider'"""
 fetch.tarball = "$ver"

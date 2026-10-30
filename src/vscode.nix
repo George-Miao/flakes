@@ -1,6 +1,7 @@
 {
   generated,
   vscode,
+  buildVscode,
   stdenv,
   curl,
   libsoup_3,
@@ -9,22 +10,12 @@
 let
   vsc-system =
     if stdenv.hostPlatform.isDarwin then
-      "darwin"
+      "darwin-arm64"
     else if stdenv.hostPlatform.isAarch then
       "linux-arm64"
     else
       "linux-x64";
-  ripgrepPaths =
-    if stdenv.hostPlatform.isDarwin then
-      {
-        nixpkgs = "Contents/Resources/app/node_modules/@vscode/ripgrep/bin/rg";
-        insiders = "Contents/Resources/app/node_modules.asar.unpacked/@vscode/ripgrep-universal/bin/darwin-x64/rg";
-      }
-    else
-      {
-        nixpkgs = "resources/app/node_modules/@vscode/ripgrep/bin/rg";
-        insiders = "resources/app/node_modules/@vscode/ripgrep-universal/bin/${vsc-system}/rg";
-      };
+  appPath = if stdenv.hostPlatform.isDarwin then "Contents/Resources/app" else "resources/app";
   platformDeps =
     if stdenv.hostPlatform.isLinux then
       [
@@ -33,29 +24,30 @@ let
       ]
     else
       [ ];
-  extraBuildInputs = platformDeps ++ [
-    curl
-  ];
+  mkVscode =
+    channel:
+    let
+      source = generated."vscode-${vsc-system}-${channel}".src;
+      package = builtins.fromJSON (builtins.readFile "${source}/${appPath}/package.json");
+    in
+    (vscode.override {
+      isInsiders = channel == "insider";
+      buildVscode =
+        args:
+        buildVscode (
+          args
+          // {
+            src = source;
+            version = package.version;
+            vscodeVersion = package.version;
+          }
+        );
+    }).overrideAttrs
+      (old: {
+        buildInputs = old.buildInputs ++ platformDeps ++ [ curl ];
+      });
 in
 {
-  vscode = vscode.overrideAttrs (
-    f: old: {
-      buildInputs = old.buildInputs ++ extraBuildInputs;
-      src = generated."vscode-${vsc-system}-stable".src;
-      version = "latest";
-    }
-  );
-  vscode-insider =
-    (vscode.override {
-      isInsiders = true;
-      useVSCodeRipgrep = false;
-    }).overrideAttrs
-      (
-        f: old: {
-          buildInputs = old.buildInputs ++ extraBuildInputs;
-          src = generated."vscode-${vsc-system}-insider".src;
-          version = "latest";
-          postPatch = builtins.replaceStrings [ ripgrepPaths.nixpkgs ] [ ripgrepPaths.insiders ] old.postPatch;
-        }
-      );
+  vscode = mkVscode "stable";
+  vscode-insider = mkVscode "insider";
 }

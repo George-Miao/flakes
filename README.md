@@ -270,13 +270,13 @@ with native artifacts for x86_64 and aarch64.
 
 Output: `.#packages.${system}.vscode`
 
-Latest stable version of Visual Studio Code, automatically fetched and packaged for Nix. The package is built with the latest stable release from Microsoft's official distribution.
+The stable VS Code release for each supported system, with a native ARM64 archive on macOS.
 
 ### [VS Code Insider](https://code.visualstudio.com/insiders/)
 
 Output: `.#packages.${system}.vscode-insider`
 
-Latest insider/preview version of Visual Studio Code with experimental features and early access to new functionality. Includes additional build dependencies to build from the insider release.
+The VS Code Insider release for each supported system, with a native ARM64 archive on macOS.
 
 ### [Pop Wallpaper](https://github.com/George-Miao/wallpaper)
 
