@@ -2,6 +2,8 @@
 
 A collection of Nix flakes for various projects and tools.
 
+This repository uses [nvfetcher](https://github.com/berberman/nvfetcher) to track upstream releases and update package sources automatically daily.
+
 - [Vericert](#vericert)
 - [Verus](#verus)
 - [Verusfmt](#verusfmt)
