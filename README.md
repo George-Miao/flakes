@@ -243,6 +243,8 @@ and OBEX required for file transfer.
 
 Command: `bm-sidebar`
 
+Included tools: `pactl`, `rfkill`.
+
 ### [XCharter](https://ctan.org/pkg/xcharter)
 
 Output: `.#packages.${system}.xcharter`

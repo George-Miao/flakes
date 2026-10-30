@@ -16,7 +16,7 @@
   gtk4-layer-shell,
   json-glib,
   libadwaita,
-  libpulseaudio,
+  pulseaudio,
   util-linux,
 }:
 stdenvNoCC.mkDerivation {
@@ -97,7 +97,7 @@ stdenvNoCC.mkDerivation {
       --chdir "$out" \
       --prefix PATH : "${
         lib.makeBinPath [
-          libpulseaudio
+          pulseaudio
           util-linux
         ]
       }"
