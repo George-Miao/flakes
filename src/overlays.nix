@@ -57,6 +57,14 @@ let
     };
   };
 
+  computerUseLinuxPackage =
+    final: prev:
+    lib.optionalAttrs prev.stdenv.hostPlatform.isLinux {
+      computer-use-linux = prev.callPackage ./computer-use-linux.nix {
+        generated = final._flakesGenerated.computer-use-linux;
+      };
+    };
+
   withGenerated =
     overlay:
     lib.composeManyExtensions [
@@ -75,6 +83,7 @@ rec {
     clashxMetaPackage
     ohMyPiPackage
     orcaPackage
+    computerUseLinuxPackage
   ];
 
   vscode = withGenerated vscodePackage;
@@ -98,4 +107,6 @@ rec {
   oh-my-pi = withGenerated ohMyPiPackage;
 
   orca = withGenerated orcaPackage;
+
+  computer-use-linux = withGenerated computerUseLinuxPackage;
 }

@@ -1,5 +1,6 @@
 { callPackage }:
 {
+  computer-use-linux = callPackage ../generated/computer-use-linux/generated.nix { };
   main = callPackage ../generated/main/generated.nix { };
   obscura = callPackage ../generated/obscura/generated.nix { };
   oh-my-pi = callPackage ../generated/oh-my-pi/generated.nix { };

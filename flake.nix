@@ -66,6 +66,9 @@
                 ns3 = pkgs.callPackage ./src/ns3.nix { };
                 clashx-meta = pkgs.callPackage ./src/clashx-meta.nix { generated = generated.main; };
                 orca = pkgs.callPackage ./src/orca.nix { generated = generated.orca; };
+                computer-use-linux = pkgs.callPackage ./src/computer-use-linux.nix {
+                  generated = generated.computer-use-linux;
+                };
               in
               {
                 inherit (vscode) vscode vscode-insider;
@@ -82,6 +85,7 @@
                 nordic-wallpaper = generated.main.nordic-wallpaper.src;
               }
               // (lib.optionalAttrs (system != "aarch64-linux") { inherit verus; })
+              // (lib.optionalAttrs pkgs.stdenv.hostPlatform.isLinux { inherit computer-use-linux; })
               // (lib.optionalAttrs pkgs.stdenv.hostPlatform.isDarwin { inherit clashx-meta; });
           };
       }

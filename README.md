@@ -73,6 +73,7 @@ You can also use specific overlays for individual packages:
 - `.#overlays.obscura-browser`: includes `obscura-browser-bin`
 - `.#overlays.oh-my-pi`: includes `oh-my-pi`
 - `.#overlays.orca`: includes `orca`
+- `.#overlays.computer-use-linux`: includes `computer-use-linux` on Linux
 - `.#overlays.wallpaper`: includes `pops-wallpaper` and `nordic-wallpaper`
 
 ## Packages
@@ -111,6 +112,44 @@ Output: `.#packages.${system}.oh-my-pi`
 
 An AI coding agent for the terminal. The package installs the `omp` executable
 from the corresponding upstream release artifact.
+
+### [Computer Use Linux](https://github.com/agent-sh/computer-use-linux)
+
+Output: `.#packages.${system}.computer-use-linux`
+
+Supported systems: `x86_64-linux` and `aarch64-linux` only.
+
+Linux desktop control through MCP and CLI. By default, the package includes
+the main executable, the COSMIC helper, the activity indicator, `wtype`, and
+the X11 tools `xdotool`, `wmctrl`, and `xprop`.
+
+Use `.override` on the flake package or the overlay package to select a desktop:
+
+```nix
+pkgs.computer-use-linux.override {
+  desktop = "wayland";
+  x11Support = false;
+}
+```
+
+`desktop` defaults to `"all"`. It selects package dependencies and helpers
+at build time.
+
+| `desktop`   | Helpers in addition to the main executable | Desktop dependencies                      |
+| ----------- | ------------------------------------------ | ----------------------------------------- |
+| `"all"`     | COSMIC helper and activity indicator       | `wtype`, `libxkbcommon`                   |
+| `"wayland"` | Activity indicator                         | `wtype`                                   |
+| `"gnome"`   | Activity indicator                         | `libxkbcommon` for the GNOME keymap check |
+| `"kde"`     | Activity indicator                         | No additional desktop dependencies        |
+| `"cosmic"`  | COSMIC helper and activity indicator       | No additional desktop dependencies        |
+| `"x11"`     | None                                       | X11 tools                                 |
+
+`x11Support` defaults to `true`. It adds `xdotool`, `wmctrl`, and `xprop` to
+each preset, including Wayland presets that need X11 tools. Set it to `false`
+to omit those tools. The `"x11"` preset requires `x11Support = true`.
+Other tools on the session's `PATH` remain available to the program.
+
+The optional [ydotool](https://github.com/ReimuNotMoe/ydotool) fallback requires a separate ydotoold service.
 
 ### Orca
 
