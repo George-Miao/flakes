@@ -12,6 +12,7 @@ A collection of Nix flakes for various projects and tools.
 - [Oh My Pi](#oh-my-pi)
 - [Computer Use Linux](#computer-use-linux)
 - [BreezeX Cursor](#breezex-cursor)
+- [Bluetooth Manager Sidebar](#bluetooth-manager-sidebar)
 - [XCharter](#xcharter)
 - [Orca](#orca)
 - [VS Code](#vs-code)
@@ -101,6 +102,7 @@ You can also use specific overlays for individual packages:
 - `.#overlays.orca`: includes `orca`
 - `.#overlays.computer-use-linux`: includes `computer-use-linux` on Linux
 - `.#overlays.breezex-cursor`: includes `breezex-cursor` on Linux
+- `.#overlays.bluetooth-manager-sidebar`: includes `bluetooth-manager-sidebar` on `x86_64-linux`
 - `.#overlays.xcharter`: includes `xcharter`
 - `.#overlays.wallpaper`: includes `pop-wallpaper` and `nordic-wallpaper`
 
@@ -229,6 +231,17 @@ home.pointerCursor = {
   gtk.enable = true;
 };
 ```
+
+### [Bluetooth Manager Sidebar](https://github.com/Relz/bluetooth-manager-sidebar)
+
+Output: `.#packages.${system}.bluetooth-manager-sidebar`
+
+Supported systems: `x86_64-linux` only.
+
+A Bluetooth sidebar for layer-shell Wayland desktops, with BlueZ required
+and OBEX required for file transfer.
+
+Command: `bm-sidebar`
 
 ### [XCharter](https://ctan.org/pkg/xcharter)
 

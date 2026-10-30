@@ -6,6 +6,14 @@
   dockerTools,
 }:
 {
+  bluetooth-manager-sidebar = {
+    pname = "bluetooth-manager-sidebar";
+    version = "1.0.0";
+    src = fetchurl {
+      url = "https://github.com/Relz/bluetooth-manager-sidebar/releases/download/v1.0.0/bm-sidebar_1.0.0-1_amd64.deb";
+      sha256 = "sha256-RCnwD3DbqmS0bJCb2b6Kj8JPYLNLSxIv1WnHhuhe4HA=";
+    };
+  };
   clashx-meta = {
     pname = "clashx-meta";
     version = "v1.4.47";

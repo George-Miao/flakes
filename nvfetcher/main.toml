@@ -30,3 +30,8 @@ fetch.tarball = "https://github.com/MetaCubeX/ClashX.Meta/releases/download/$ver
 src.webpage = "https://mirrors.ctan.org/fonts/xcharter/README"
 src.regex = 'Current version ([0-9.]+)'
 fetch.url = "https://mirrors.ctan.org/fonts/xcharter.zip"
+
+[bluetooth-manager-sidebar]
+src.github = "Relz/bluetooth-manager-sidebar"
+src.prefix = "v"
+fetch.url = "https://github.com/Relz/bluetooth-manager-sidebar/releases/download/v$ver/bm-sidebar_$ver-1_amd64.deb"

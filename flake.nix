@@ -72,6 +72,9 @@
                 breezex-cursor = pkgs.callPackage ./src/breezex-cursor.nix {
                   generated = generated.breezex-cursor;
                 };
+                bluetooth-manager-sidebar = pkgs.callPackage ./src/bluetooth-manager-sidebar.nix {
+                  generated = generated.main;
+                };
                 xcharter = pkgs.callPackage ./src/xcharter.nix {
                   generated = generated.main;
                 };
@@ -95,6 +98,7 @@
               // (lib.optionalAttrs pkgs.stdenv.hostPlatform.isLinux {
                 inherit computer-use-linux breezex-cursor;
               })
+              // (lib.optionalAttrs (system == "x86_64-linux") { inherit bluetooth-manager-sidebar; })
               // (lib.optionalAttrs pkgs.stdenv.hostPlatform.isDarwin { inherit clashx-meta; });
           };
       }

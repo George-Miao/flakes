@@ -73,6 +73,14 @@ let
       };
     };
 
+  bluetoothManagerSidebarPackage =
+    final: prev:
+    lib.optionalAttrs (prev.stdenv.hostPlatform.system == "x86_64-linux") {
+      bluetooth-manager-sidebar = prev.callPackage ./bluetooth-manager-sidebar.nix {
+        generated = final._flakesGenerated.main;
+      };
+    };
+
   xcharterPackage = final: prev: {
     xcharter = prev.callPackage ./xcharter.nix {
       generated = final._flakesGenerated.main;
@@ -99,6 +107,7 @@ rec {
     orcaPackage
     computerUseLinuxPackage
     breezexCursorPackage
+    bluetoothManagerSidebarPackage
     xcharterPackage
   ];
 
@@ -127,6 +136,8 @@ rec {
   computer-use-linux = withGenerated computerUseLinuxPackage;
 
   breezex-cursor = withGenerated breezexCursorPackage;
+
+  bluetooth-manager-sidebar = withGenerated bluetoothManagerSidebarPackage;
 
   xcharter = withGenerated xcharterPackage;
 }
