@@ -71,6 +71,14 @@
                 vericert = pkgs.stdenv.mkDerivation {
                   inherit src buildInputs;
                   name = "vericert";
+                  postPatch = ''
+                    # Both SMTCoq targets generate the same lexer and parser files.
+                    grep -Fq 'all: Makefile.coq' lib/cohpred/Makefile
+                    substituteInPlace lib/cohpred/Makefile \
+                      --replace 'all: Makefile.coq' '.NOTPARALLEL: all
+
+                    all: Makefile.coq'
+                  '';
                   buildPhase = ''
                     runHook preBuild
                     make -j8
