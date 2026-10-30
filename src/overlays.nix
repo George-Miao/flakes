@@ -73,6 +73,12 @@ let
       };
     };
 
+  xcharterPackage = final: prev: {
+    xcharter = prev.callPackage ./xcharter.nix {
+      generated = final._flakesGenerated.main;
+    };
+  };
+
   withGenerated =
     overlay:
     lib.composeManyExtensions [
@@ -93,6 +99,7 @@ rec {
     orcaPackage
     computerUseLinuxPackage
     breezexCursorPackage
+    xcharterPackage
   ];
 
   vscode = withGenerated vscodePackage;
@@ -120,4 +127,6 @@ rec {
   computer-use-linux = withGenerated computerUseLinuxPackage;
 
   breezex-cursor = withGenerated breezexCursorPackage;
+
+  xcharter = withGenerated xcharterPackage;
 }

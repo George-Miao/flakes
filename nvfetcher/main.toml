@@ -25,3 +25,8 @@ fetch.github = "verus-lang/verusfmt"
 [clashx-meta]
 src.github = "MetaCubeX/ClashX.Meta"
 fetch.tarball = "https://github.com/MetaCubeX/ClashX.Meta/releases/download/$ver/ClashX.Meta.zip"
+
+[xcharter]
+src.webpage = "https://mirrors.ctan.org/fonts/xcharter/README"
+src.regex = 'Current version ([0-9.]+)'
+fetch.url = "https://mirrors.ctan.org/fonts/xcharter.zip"

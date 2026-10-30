@@ -12,6 +12,7 @@ A collection of Nix flakes for various projects and tools.
 - [Oh My Pi](#oh-my-pi)
 - [Computer Use Linux](#computer-use-linux)
 - [BreezeX Cursor](#breezex-cursor)
+- [XCharter](#xcharter)
 - [Orca](#orca)
 - [VS Code](#vs-code)
 - [VS Code Insider](#vs-code-insider)
@@ -98,6 +99,7 @@ You can also use specific overlays for individual packages:
 - `.#overlays.orca`: includes `orca`
 - `.#overlays.computer-use-linux`: includes `computer-use-linux` on Linux
 - `.#overlays.breezex-cursor`: includes `breezex-cursor` on Linux
+- `.#overlays.xcharter`: includes `xcharter`
 - `.#overlays.wallpaper`: includes `pop-wallpaper` and `nordic-wallpaper`
 
 ## Packages
@@ -224,6 +226,18 @@ home.pointerCursor = {
   size = 24;
   gtk.enable = true;
 };
+```
+
+### [XCharter](https://ctan.org/pkg/xcharter)
+
+Output: `.#packages.${system}.xcharter`
+
+Bitstream Charter fonts with small capitals, oldstyle figures, and superior figures.
+
+On NixOS:
+
+```nix
+fonts.packages = [ pkgs.xcharter ];
 ```
 
 ### [Orca](https://github.com/stablyai/orca)

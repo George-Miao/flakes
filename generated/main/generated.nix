@@ -72,4 +72,12 @@
       sha256 = "sha256-Zaw90tm6R8hhcwLGyotNmoW86ZHQPmn/iqJvHqxXCbM=";
     };
   };
+  xcharter = {
+    pname = "xcharter";
+    version = "1.26";
+    src = fetchurl {
+      url = "https://mirrors.ctan.org/fonts/xcharter.zip";
+      sha256 = "sha256-2OOrmTVajK4RwlWd+ppFhTDOPSTdT0y9iPAUDo8xqH4=";
+    };
+  };
 }

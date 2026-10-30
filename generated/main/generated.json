@@ -117,5 +117,20 @@
             "type": "github"
         },
         "version": "v0.7.4"
+    },
+    "xcharter": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "xcharter",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-2OOrmTVajK4RwlWd+ppFhTDOPSTdT0y9iPAUDo8xqH4=",
+            "type": "url",
+            "url": "https://mirrors.ctan.org/fonts/xcharter.zip"
+        },
+        "version": "1.26"
     }
 }

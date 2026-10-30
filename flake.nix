@@ -72,6 +72,9 @@
                 breezex-cursor = pkgs.callPackage ./src/breezex-cursor.nix {
                   generated = generated.breezex-cursor;
                 };
+                xcharter = pkgs.callPackage ./src/xcharter.nix {
+                  generated = generated.main;
+                };
               in
               {
                 inherit (vscode) vscode vscode-insider;
@@ -82,6 +85,7 @@
                   oh-my-pi
                   ns3
                   orca
+                  xcharter
                   ;
                 vericert = vericert.packages.${system}.vericert;
                 pop-wallpaper = generated.main.pop-wallpaper.src;
