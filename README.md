@@ -29,6 +29,8 @@ states an exception.
 - x86_64-darwin
 - aarch64-darwin
 
+The current nixpkgs input does not support `x86_64-darwin`.
+
 ## Usage
 
 In your `flake.nix`, you can import packages from this flake as follows:
