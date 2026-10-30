@@ -29,7 +29,6 @@ states an exception.
 
 - x86_64-linux
 - aarch64-linux
-- x86_64-darwin
 - aarch64-darwin
 
 The current nixpkgs input does not support `x86_64-darwin`.
@@ -123,7 +122,7 @@ A formally verified high-level synthesis (HLS) tool that compiles C to Verilog w
 
 Output: `.#packages.${system}.verus`
 
-Supported systems: `x86_64-linux`, `x86_64-darwin`, and `aarch64-darwin`.
+Supported systems: `x86_64-linux` and `aarch64-darwin`.
 
 A verifier for Rust programs focused on proving correctness properties (such as safety and functional correctness) through specifications and proofs.
 
@@ -155,7 +154,7 @@ A discrete-event network simulator, built from the ns-3 source release.
 
 Output: `.#packages.${system}.clashx-meta`
 
-Supported systems: `x86_64-darwin` and `aarch64-darwin` only.
+Supported systems: `aarch64-darwin` only.
 
 A rule-based proxy client for macOS, powered by Mihomo. The package installs
 `ClashX Meta.app`.
