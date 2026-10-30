@@ -1,5 +1,6 @@
 { callPackage }:
 {
+  breezex-cursor = callPackage ../generated/breezex-cursor/generated.nix { };
   computer-use-linux = callPackage ../generated/computer-use-linux/generated.nix { };
   main = callPackage ../generated/main/generated.nix { };
   obscura = callPackage ../generated/obscura/generated.nix { };

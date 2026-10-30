@@ -69,6 +69,9 @@
                 computer-use-linux = pkgs.callPackage ./src/computer-use-linux.nix {
                   generated = generated.computer-use-linux;
                 };
+                breezex-cursor = pkgs.callPackage ./src/breezex-cursor.nix {
+                  generated = generated.breezex-cursor;
+                };
               in
               {
                 inherit (vscode) vscode vscode-insider;
@@ -85,7 +88,9 @@
                 nordic-wallpaper = generated.main.nordic-wallpaper.src;
               }
               // (lib.optionalAttrs (system != "aarch64-linux") { inherit verus; })
-              // (lib.optionalAttrs pkgs.stdenv.hostPlatform.isLinux { inherit computer-use-linux; })
+              // (lib.optionalAttrs pkgs.stdenv.hostPlatform.isLinux {
+                inherit computer-use-linux breezex-cursor;
+              })
               // (lib.optionalAttrs pkgs.stdenv.hostPlatform.isDarwin { inherit clashx-meta; });
           };
       }

@@ -11,6 +11,7 @@ A collection of Nix flakes for various projects and tools.
 - [Obscura Browser](#obscura-browser)
 - [Oh My Pi](#oh-my-pi)
 - [Computer Use Linux](#computer-use-linux)
+- [BreezeX Cursor](#breezex-cursor)
 - [Orca](#orca)
 - [VS Code](#vs-code)
 - [VS Code Insider](#vs-code-insider)
@@ -96,6 +97,7 @@ You can also use specific overlays for individual packages:
 - `.#overlays.oh-my-pi`: includes `oh-my-pi`
 - `.#overlays.orca`: includes `orca`
 - `.#overlays.computer-use-linux`: includes `computer-use-linux` on Linux
+- `.#overlays.breezex-cursor`: includes `breezex-cursor` on Linux
 - `.#overlays.wallpaper`: includes `pop-wallpaper` and `nordic-wallpaper`
 
 ## Packages
@@ -202,6 +204,27 @@ to omit those tools. The `"x11"` preset requires `x11Support = true`.
 Other tools on the session's `PATH` remain available to the program.
 
 The optional [ydotool](https://github.com/ReimuNotMoe/ydotool) fallback requires a separate ydotoold service.
+
+### [BreezeX Cursor](https://github.com/ful1e5/BreezeX_Cursor)
+
+Output: `.#packages.${system}.breezex-cursor`
+
+Supported systems: `x86_64-linux` and `aarch64-linux` only.
+
+Extended Breeze cursor themes with HiDPI support. The package installs
+`BreezeX-Black`, `BreezeX-Dark`, and `BreezeX-Light` under `share/icons`.
+Select one of these theme names in your desktop settings.
+
+For Home Manager:
+
+```nix
+home.pointerCursor = {
+  package = flakes.packages.${pkgs.stdenv.hostPlatform.system}.breezex-cursor;
+  name = "BreezeX-Dark";
+  size = 24;
+  gtk.enable = true;
+};
+```
 
 ### [Orca](https://github.com/stablyai/orca)
 

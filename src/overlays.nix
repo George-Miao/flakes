@@ -65,6 +65,14 @@ let
       };
     };
 
+  breezexCursorPackage =
+    final: prev:
+    lib.optionalAttrs prev.stdenv.hostPlatform.isLinux {
+      breezex-cursor = prev.callPackage ./breezex-cursor.nix {
+        generated = final._flakesGenerated.breezex-cursor;
+      };
+    };
+
   withGenerated =
     overlay:
     lib.composeManyExtensions [
@@ -84,6 +92,7 @@ rec {
     ohMyPiPackage
     orcaPackage
     computerUseLinuxPackage
+    breezexCursorPackage
   ];
 
   vscode = withGenerated vscodePackage;
@@ -109,4 +118,6 @@ rec {
   orca = withGenerated orcaPackage;
 
   computer-use-linux = withGenerated computerUseLinuxPackage;
+
+  breezex-cursor = withGenerated breezexCursorPackage;
 }
