@@ -148,7 +148,7 @@ with OpenJDK 8.
 
 Output: `.#packages.${system}.ns3`
 
-A discrete-event network simulator, built from the ns-3 source release.
+A discrete-event network simulator with LoRaWAN support, built from the ns-3 source release.
 
 ### [ClashX Meta](https://github.com/MetaCubeX/ClashX.Meta)
 
