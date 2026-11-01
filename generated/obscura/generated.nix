@@ -8,34 +8,34 @@
 {
   obscura-browser-bin-darwin-arm64 = {
     pname = "obscura-browser-bin-darwin-arm64";
-    version = "v0.2.5";
+    version = "v0.2.6";
     src = fetchTarball {
-      url = "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.5/obscura-aarch64-macos.tar.gz";
-      sha256 = "sha256-Iq2JrU22GY5RLnGg7QXG9z81r9si8GjdkVZUIgyQK10=";
+      url = "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.6/obscura-aarch64-macos.tar.gz";
+      sha256 = "sha256-I/BP8hoW+FHI6zl2HwYQHB7F66f8C2Y+53mfHV3iRNU=";
     };
   };
   obscura-browser-bin-darwin-x64 = {
     pname = "obscura-browser-bin-darwin-x64";
-    version = "v0.2.5";
+    version = "v0.2.6";
     src = fetchTarball {
-      url = "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.5/obscura-x86_64-macos.tar.gz";
-      sha256 = "sha256-fTiafo78Y9EE20rPoT6UBRq9zhr2magPG8Zt17qlSpM=";
+      url = "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.6/obscura-x86_64-macos.tar.gz";
+      sha256 = "sha256-FrEA85zOTsHZBH1UzySb8/tkuX0/N6Foi/MXyT5n/BE=";
     };
   };
   obscura-browser-bin-linux-arm64 = {
     pname = "obscura-browser-bin-linux-arm64";
-    version = "v0.2.5";
+    version = "v0.2.6";
     src = fetchTarball {
-      url = "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.5/obscura-aarch64-linux.tar.gz";
-      sha256 = "sha256-S/nuJYtvT/BrAAhwsxUzCsgHX9VSBe26W7ysc9PdrRI=";
+      url = "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.6/obscura-aarch64-linux.tar.gz";
+      sha256 = "sha256-/MwqV1c890/8UGbOkJ/ttwRAVUSl2dzGjpqMhVAcV5I=";
     };
   };
   obscura-browser-bin-linux-x64 = {
     pname = "obscura-browser-bin-linux-x64";
-    version = "v0.2.5";
+    version = "v0.2.6";
     src = fetchTarball {
-      url = "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.5/obscura-x86_64-linux.tar.gz";
-      sha256 = "sha256-6Fi8vAn/pg8cpVoZnLGnORUYpL655cl82L0oL4vY44U=";
+      url = "https://github.com/h4ckf0r0day/obscura/releases/download/v0.2.6/obscura-x86_64-linux.tar.gz";
+      sha256 = "sha256-taYDNWpBtldR2AeitoGhsjzOJMBt50/dkSsie4YPrxM=";
     };
   };
 }
