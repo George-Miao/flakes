@@ -93,11 +93,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-dAVigX3kwgqd8XByykwAxpusfXbCy5qS+5dVbeHzXug=",
+            "sha256": "sha256-QIlKURRpQNPWIiIU/3YGmhMd6NVIpEj1R7RdCvKTDz8=",
             "type": "tarball",
-            "url": "https://github.com/verus-lang/verus/releases/download/release%2F0.2026.10.26.d17fbd0/verus-0.2026.10.26.d17fbd0-arm64-macos.zip"
+            "url": "https://github.com/verus-lang/verus/releases/download/release%2F0.2026.11.02.8bf68ee/verus-0.2026.11.02.8bf68ee-arm64-macos.zip"
         },
-        "version": "0.2026.10.26.d17fbd0"
+        "version": "0.2026.11.02.8bf68ee"
     },
     "verus-darwin-x64": {
         "cargoLock": null,
@@ -107,11 +107,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-zGiJ8D2uEcRZjPhIpBh8QSXUUcfi/dO/iFPYuM+EmZw=",
+            "sha256": "sha256-wM60V2N5l8XP7zl0uresazJcljAONAzKrZis0VEmCKA=",
             "type": "tarball",
-            "url": "https://github.com/verus-lang/verus/releases/download/release%2F0.2026.10.26.d17fbd0/verus-0.2026.10.26.d17fbd0-x86-macos.zip"
+            "url": "https://github.com/verus-lang/verus/releases/download/release%2F0.2026.11.02.8bf68ee/verus-0.2026.11.02.8bf68ee-x86-macos.zip"
         },
-        "version": "0.2026.10.26.d17fbd0"
+        "version": "0.2026.11.02.8bf68ee"
     },
     "verus-linux-x64": {
         "cargoLock": null,
@@ -121,11 +121,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-u5DxhWAIBdNgpK+oRHQh8MvC3s4OokbcpaUL4pqcDtk=",
+            "sha256": "sha256-m7u6bXGFeis39gpBlD5o3z4Btl1/CpbYuog03tzmKQA=",
             "type": "tarball",
-            "url": "https://github.com/verus-lang/verus/releases/download/release%2F0.2026.10.26.d17fbd0/verus-0.2026.10.26.d17fbd0-x86-linux.zip"
+            "url": "https://github.com/verus-lang/verus/releases/download/release%2F0.2026.11.02.8bf68ee/verus-0.2026.11.02.8bf68ee-x86-linux.zip"
         },
-        "version": "0.2026.10.26.d17fbd0"
+        "version": "0.2026.11.02.8bf68ee"
     },
     "verusfmt": {
         "cargoLock": null,
