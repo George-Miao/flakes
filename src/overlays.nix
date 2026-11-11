@@ -94,6 +94,14 @@ let
     };
   };
 
+  kicadMcpPackage =
+    final: prev:
+    lib.optionalAttrs prev.stdenv.hostPlatform.isLinux {
+      kicad-mcp = prev.callPackage ./kicad-mcp.nix {
+        generated = final._flakesGenerated.main;
+      };
+    };
+
   withGenerated =
     overlay:
     lib.composeManyExtensions [
@@ -117,6 +125,7 @@ rec {
     bluetoothManagerSidebarPackage
     xcharterPackage
     veritPackage
+    kicadMcpPackage
   ];
 
   vscode = withGenerated vscodePackage;
@@ -150,4 +159,6 @@ rec {
   xcharter = withGenerated xcharterPackage;
 
   verit = withGenerated veritPackage;
+
+  kicad-mcp = withGenerated kicadMcpPackage;
 }

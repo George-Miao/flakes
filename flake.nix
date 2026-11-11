@@ -78,6 +78,9 @@
                 xcharter = pkgs.callPackage ./src/xcharter.nix {
                   generated = generated.main;
                 };
+                kicad-mcp = pkgs.callPackage ./src/kicad-mcp.nix {
+                  generated = generated.main;
+                };
               in
               {
                 inherit (vscode) vscode vscode-insider;
@@ -97,7 +100,7 @@
               }
               // (lib.optionalAttrs (system != "aarch64-linux") { inherit verus; })
               // (lib.optionalAttrs pkgs.stdenv.hostPlatform.isLinux {
-                inherit computer-use-linux breezex-cursor;
+                inherit computer-use-linux breezex-cursor kicad-mcp;
               })
               // (lib.optionalAttrs (system == "x86_64-linux") { inherit bluetooth-manager-sidebar; })
               // (lib.optionalAttrs pkgs.stdenv.hostPlatform.isDarwin { inherit clashx-meta; });

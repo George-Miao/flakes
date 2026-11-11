@@ -18,6 +18,7 @@ This repository uses [nvfetcher](https://github.com/berberman/nvfetcher) to trac
 - [Bluetooth Manager Sidebar](#bluetooth-manager-sidebar)
 - [XCharter](#xcharter)
 - [Orca](#orca)
+- [KiCad MCP Server](#kicad-mcp-server)
 - [VS Code](#vs-code)
 - [VS Code Insider](#vs-code-insider)
 - [Pop Wallpaper](#pop-wallpaper)
@@ -107,6 +108,7 @@ You can also use specific overlays for individual packages:
 - `.#overlays.breezex-cursor`: includes `breezex-cursor` on Linux
 - `.#overlays.bluetooth-manager-sidebar`: includes `bluetooth-manager-sidebar` on `x86_64-linux`
 - `.#overlays.xcharter`: includes `xcharter`
+- `.#overlays.kicad-mcp`: includes `kicad-mcp` on Linux
 - `.#overlays.wallpaper`: includes `pop-wallpaper` and `nordic-wallpaper`
 
 ## Packages
@@ -275,6 +277,17 @@ Output: `.#packages.${system}.orca`
 An agent development environment for orchestrating coding agents. The package
 uses Orca's released AppImages on Linux and signed application bundles on macOS,
 with native artifacts for x86_64 and aarch64.
+
+### [KiCad MCP Server](https://github.com/mixelpixx/KiCAD-MCP-Server)
+
+Output: `.#packages.${system}.kicad-mcp`
+
+An MCP server for KiCad board and schematic design.
+
+Supported systems: `x86_64-linux` and `aarch64-linux`.
+
+Use `kicad-mcp` as the command in your MCP client; KiCad and Python dependencies are included.
+For live IPC access, enable the KiCad API server in KiCad preferences.
 
 ### [VS Code](https://code.visualstudio.com/)
 

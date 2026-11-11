@@ -28,6 +28,42 @@
         },
         "version": "v1.4.47"
     },
+    "kicad-mcp": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "kicad-mcp",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "mixelpixx",
+            "repo": "KiCAD-MCP-Server",
+            "rev": "v2.8.3",
+            "sha256": "sha256-n5o+Sbl00CjKhvJUlAG+e4yhky7zJtaBwJVQUrVOLcI=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v2.8.3"
+    },
+    "kicad-skip": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "kicad-skip",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-3GtHIV2h6C8syFZ/Dx6OWsgpf14ZQdlnGS4EM4DgjIM=",
+            "type": "url",
+            "url": "https://pypi.org/packages/source/k/kicad-skip/kicad-skip-0.2.5.tar.gz"
+        },
+        "version": "0.2.5"
+    },
     "nordic-wallpaper": {
         "cargoLock": null,
         "date": "2025-12-31",

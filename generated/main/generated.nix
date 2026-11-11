@@ -22,6 +22,25 @@
       sha256 = "sha256-WIWqHcZrEcLeh4Eo5PUK5ZqyF5dtFMthX/xOy1pIDNY=";
     };
   };
+  kicad-mcp = {
+    pname = "kicad-mcp";
+    version = "v2.8.3";
+    src = fetchFromGitHub {
+      owner = "mixelpixx";
+      repo = "KiCAD-MCP-Server";
+      rev = "v2.8.3";
+      fetchSubmodules = false;
+      sha256 = "sha256-n5o+Sbl00CjKhvJUlAG+e4yhky7zJtaBwJVQUrVOLcI=";
+    };
+  };
+  kicad-skip = {
+    pname = "kicad-skip";
+    version = "0.2.5";
+    src = fetchurl {
+      url = "https://pypi.org/packages/source/k/kicad-skip/kicad-skip-0.2.5.tar.gz";
+      sha256 = "sha256-3GtHIV2h6C8syFZ/Dx6OWsgpf14ZQdlnGS4EM4DgjIM=";
+    };
+  };
   nordic-wallpaper = {
     pname = "nordic-wallpaper";
     version = "7a8e3bcabafbefd1c5b19229841b9bf377a4b765";
