@@ -81,6 +81,9 @@
                 kicad-mcp = pkgs.callPackage ./src/kicad-mcp.nix {
                   generated = generated.main;
                 };
+                jlcone = pkgs.callPackage ./src/jlcone.nix {
+                  generated = generated.jlcone;
+                };
               in
               {
                 inherit (vscode) vscode vscode-insider;
@@ -103,6 +106,15 @@
                 inherit computer-use-linux breezex-cursor kicad-mcp;
               })
               // (lib.optionalAttrs (system == "x86_64-linux") { inherit bluetooth-manager-sidebar; })
+              // (lib.optionalAttrs
+                (builtins.elem system [
+                  "x86_64-linux"
+                  "aarch64-darwin"
+                ])
+                {
+                  inherit jlcone;
+                }
+              )
               // (lib.optionalAttrs pkgs.stdenv.hostPlatform.isDarwin { inherit clashx-meta; });
           };
       }

@@ -102,6 +102,19 @@ let
       };
     };
 
+  jlconePackage =
+    final: prev:
+    lib.optionalAttrs
+      (builtins.elem prev.stdenv.hostPlatform.system [
+        "x86_64-linux"
+        "aarch64-darwin"
+      ])
+      {
+        jlcone = prev.callPackage ./jlcone.nix {
+          generated = final._flakesGenerated.jlcone;
+        };
+      };
+
   withGenerated =
     overlay:
     lib.composeManyExtensions [
@@ -126,6 +139,7 @@ rec {
     xcharterPackage
     veritPackage
     kicadMcpPackage
+    jlconePackage
   ];
 
   vscode = withGenerated vscodePackage;
@@ -161,4 +175,6 @@ rec {
   verit = withGenerated veritPackage;
 
   kicad-mcp = withGenerated kicadMcpPackage;
+
+  jlcone = withGenerated jlconePackage;
 }

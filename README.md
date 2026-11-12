@@ -19,6 +19,7 @@ This repository uses [nvfetcher](https://github.com/berberman/nvfetcher) to trac
 - [XCharter](#xcharter)
 - [Orca](#orca)
 - [KiCad MCP Server](#kicad-mcp-server)
+- [JLCONE](#jlcone)
 - [VS Code](#vs-code)
 - [VS Code Insider](#vs-code-insider)
 - [Pop Wallpaper](#pop-wallpaper)
@@ -109,6 +110,7 @@ You can also use specific overlays for individual packages:
 - `.#overlays.bluetooth-manager-sidebar`: includes `bluetooth-manager-sidebar` on `x86_64-linux`
 - `.#overlays.xcharter`: includes `xcharter`
 - `.#overlays.kicad-mcp`: includes `kicad-mcp` on Linux
+- `.#overlays.jlcone`: includes `jlcone` on `x86_64-linux` and `aarch64-darwin`
 - `.#overlays.wallpaper`: includes `pop-wallpaper` and `nordic-wallpaper`
 
 ## Packages
@@ -288,6 +290,16 @@ Supported systems: `x86_64-linux` and `aarch64-linux`.
 
 Use `kicad-mcp` as the command in your MCP client; KiCad and Python dependencies are included.
 For live IPC access, enable the KiCad API server in KiCad preferences.
+
+### [JLCONE](https://jlcone.com/download)
+
+Output: `.#packages.${system}.jlcone`
+
+JLCPCB's desktop client for manufacturing orders.
+
+Supported systems: `x86_64-linux` and `aarch64-darwin`.
+
+Command: `jlcone`. This package is unfree; enable `allowUnfree` to install it.
 
 ### [VS Code](https://code.visualstudio.com/)
 

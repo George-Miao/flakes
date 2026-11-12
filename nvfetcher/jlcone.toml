@@ -1,0 +1,7 @@
+[jlcone-linux-x64]
+src.cmd = '''curl -fsS https://jlcone.com/api/overseas-core-platform/baseDataConfig/checkUpdate -H 'Content-Type: application/json' --data '{"platform":"linux","versionCode":"0"}' | jq -er '.data.versionCode' '''
+fetch.url = "https://rs.jlcpcb.com/static/APP/app_version/jlcone-$ver.deb"
+
+[jlcone-darwin-arm64]
+src.cmd = '''curl -fsS https://jlcone.com/api/overseas-core-platform/baseDataConfig/checkUpdate -H 'Content-Type: application/json' --data '{"platform":"macos(m)","versionCode":"0"}' | jq -er '.data.versionCode' '''
+fetch.url = "https://rs.jlcpcb.com/static/APP/app_version/jlcone-$ver-arm64.dmg"
