@@ -42,12 +42,12 @@
             "name": null,
             "owner": "mixelpixx",
             "repo": "KiCAD-MCP-Server",
-            "rev": "v2.8.3",
-            "sha256": "sha256-n5o+Sbl00CjKhvJUlAG+e4yhky7zJtaBwJVQUrVOLcI=",
+            "rev": "v2.9.0",
+            "sha256": "sha256-Y8mDi6i0lav9QK0/4fuPb0fEYHfZ+0bx933+j4HTa8E=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.8.3"
+        "version": "v2.9.0"
     },
     "kicad-skip": {
         "cargoLock": null,

@@ -24,13 +24,13 @@
   };
   kicad-mcp = {
     pname = "kicad-mcp";
-    version = "v2.8.3";
+    version = "v2.9.0";
     src = fetchFromGitHub {
       owner = "mixelpixx";
       repo = "KiCAD-MCP-Server";
-      rev = "v2.8.3";
+      rev = "v2.9.0";
       fetchSubmodules = false;
-      sha256 = "sha256-n5o+Sbl00CjKhvJUlAG+e4yhky7zJtaBwJVQUrVOLcI=";
+      sha256 = "sha256-Y8mDi6i0lav9QK0/4fuPb0fEYHfZ+0bx933+j4HTa8E=";
     };
   };
   kicad-skip = {
