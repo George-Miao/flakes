@@ -16,10 +16,10 @@
   };
   clashx-meta = {
     pname = "clashx-meta";
-    version = "v1.4.47";
+    version = "v1.4.48";
     src = fetchTarball {
-      url = "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v1.4.47/ClashX.Meta.zip";
-      sha256 = "sha256-WIWqHcZrEcLeh4Eo5PUK5ZqyF5dtFMthX/xOy1pIDNY=";
+      url = "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v1.4.48/ClashX.Meta.zip";
+      sha256 = "sha256-87iwPLMLoTck8Ec6KdLxX707GE6xSPjBlOHW1PiR3l0=";
     };
   };
   kicad-mcp = {

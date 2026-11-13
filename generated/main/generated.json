@@ -22,11 +22,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-WIWqHcZrEcLeh4Eo5PUK5ZqyF5dtFMthX/xOy1pIDNY=",
+            "sha256": "sha256-87iwPLMLoTck8Ec6KdLxX707GE6xSPjBlOHW1PiR3l0=",
             "type": "tarball",
-            "url": "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v1.4.47/ClashX.Meta.zip"
+            "url": "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v1.4.48/ClashX.Meta.zip"
         },
-        "version": "v1.4.47"
+        "version": "v1.4.48"
     },
     "kicad-mcp": {
         "cargoLock": null,

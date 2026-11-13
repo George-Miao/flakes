@@ -16,10 +16,10 @@
   };
   jlcone-linux-x64 = {
     pname = "jlcone-linux-x64";
-    version = "1.0.72";
+    version = "1.0.73";
     src = fetchurl {
-      url = "https://rs.jlcpcb.com/static/APP/app_version/jlcone-1.0.72.deb";
-      sha256 = "sha256-Xnm7A14Inwd5rOr2Z9DvNOgZuadZlnmXgafl9qjPDIs=";
+      url = "https://rs.jlcpcb.com/static/APP/app_version/jlcone-1.0.73.deb";
+      sha256 = "sha256-Nf4nim48jegVERfsVFLMLB3NR0DlK/IsujPPSPrmVF4=";
     };
   };
 }
