@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-KWwcLyasWVp6kt2uCwhsbt2VKLHY8l6cho55CLvyqc0=",
+            "sha256": "sha256-kAKo35E1o9CGmtjE0rVMhctM7kmF2Qe662k8ZjeQpys=",
             "type": "url",
-            "url": "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.53/computer-use-linux-aarch64-unknown-linux-gnu"
+            "url": "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.56/computer-use-linux-aarch64-unknown-linux-gnu"
         },
-        "version": "v0.7.53"
+        "version": "v0.7.56"
     },
     "computer-use-linux-cosmic-aarch64": {
         "cargoLock": null,
@@ -23,11 +23,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-vH8KHKKNlgEuiU9lKqk66hXs+5dHl2hN+3hV8Yh5XIM=",
+            "sha256": "sha256-FPMuABmBI/uQuVVU/4X+FpA9PlE7byuHk0Hwhzm84B0=",
             "type": "url",
-            "url": "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.53/computer-use-linux-cosmic-aarch64-unknown-linux-gnu"
+            "url": "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.56/computer-use-linux-cosmic-aarch64-unknown-linux-gnu"
         },
-        "version": "v0.7.53"
+        "version": "v0.7.56"
     },
     "computer-use-linux-cosmic-x86_64": {
         "cargoLock": null,
@@ -38,11 +38,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-5Kpc6UjWP0qBW3q9LMF3zPoG7h02YAA0OsjthOpmYVg=",
+            "sha256": "sha256-K0kpI7xwEendq0Dgd7Os2ioVUcdKsBPrCcc83jMk5Ac=",
             "type": "url",
-            "url": "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.53/computer-use-linux-cosmic-x86_64-unknown-linux-gnu"
+            "url": "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.56/computer-use-linux-cosmic-x86_64-unknown-linux-gnu"
         },
-        "version": "v0.7.53"
+        "version": "v0.7.56"
     },
     "computer-use-linux-indicator-aarch64": {
         "cargoLock": null,
@@ -53,11 +53,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-CK3JKxx6K5WojEv2vE9VdkuccLr893OTPdIZYg/773w=",
+            "sha256": "sha256-t3ZZPF6G0mUxl3KtX5ASByXQCBMXZXpJLzccyzCkLEI=",
             "type": "url",
-            "url": "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.53/computer-use-linux-indicator-aarch64-unknown-linux-gnu"
+            "url": "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.56/computer-use-linux-indicator-aarch64-unknown-linux-gnu"
         },
-        "version": "v0.7.53"
+        "version": "v0.7.56"
     },
     "computer-use-linux-indicator-x86_64": {
         "cargoLock": null,
@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-jNde4DlP8R9RdqW3iYmJufQKKf0gg8qyojAoV0m/ZCs=",
+            "sha256": "sha256-6pS62MVNqYnBkR9GXchhLhQA9gMRxIugwiOAseA1kS8=",
             "type": "url",
-            "url": "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.53/computer-use-linux-indicator-x86_64-unknown-linux-gnu"
+            "url": "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.56/computer-use-linux-indicator-x86_64-unknown-linux-gnu"
         },
-        "version": "v0.7.53"
+        "version": "v0.7.56"
     },
     "computer-use-linux-x86_64": {
         "cargoLock": null,
@@ -83,10 +83,10 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-kQWwyu/meIG9lUmlHFklLS8d/kMG2cxxvgCRzTCF0SI=",
+            "sha256": "sha256-PJfY+odkDppOs2EtrJXEfR04X+F6CcLlbTeUhqG5u0Q=",
             "type": "url",
-            "url": "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.53/computer-use-linux-x86_64-unknown-linux-gnu"
+            "url": "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.56/computer-use-linux-x86_64-unknown-linux-gnu"
         },
-        "version": "v0.7.53"
+        "version": "v0.7.56"
     }
 }
