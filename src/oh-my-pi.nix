@@ -25,6 +25,7 @@ stdenvNoCC.mkDerivation {
   inherit (platform) src;
 
   dontUnpack = true;
+  dontStrip = true;
   dontBuild = true;
   dontConfigure = true;
 
