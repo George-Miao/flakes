@@ -115,7 +115,9 @@ You can also use specific overlays for individual packages:
 
 ## Packages
 
-### [Vericert](https://github.com/ymherklotz/vericert)
+See [VERSION.md](VERSION.md) for current fetched versions.
+
+### Vericert
 
 Output: `.#packages.${system}.vericert`
 

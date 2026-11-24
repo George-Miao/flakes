@@ -1,9 +1,17 @@
 name: nvfetcher
 on:
+  push:
+    paths:
+      - "generated/**/generated.json"
+      - "scripts/update-version.py"
+      - ".github/workflows/nvfetcher.yml"
   schedule:
     - cron: "10 5 * * *"
   workflow_dispatch:
   repository_dispatch:
+concurrency:
+  group: "nvfetcher-${{ github.ref }}"
+  cancel-in-progress: false
 jobs:
   nvfetcher:
     runs-on: ubuntu-latest
@@ -12,31 +20,44 @@ jobs:
       pull-requests: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: DeterminateSystems/nix-installer-action@main
+        if: github.event_name != 'push'
       - uses: DeterminateSystems/magic-nix-cache-action@main
+        if: github.event_name != 'push'
       - name: "nvfetcher generate"
+        if: github.event_name != 'push'
         run: ./scripts/update-nvfetcher.sh
+      - name: Generate version report
+        run: python3 scripts/update-version.py
       - name: Check for changes
         id: check-change
         run: |
-          nix-shell -p git-crypt
-          set +e
-          git diff --quiet --exit-code generated
-          changed=$?
-          echo "changed=$changed" >> $GITHUB_OUTPUT
+          git add -- generated VERSION.md
+          if git diff --cached --quiet -- generated; then
+            echo "sources_changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "sources_changed=true" >> "$GITHUB_OUTPUT"
+          fi
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
       - name: Test build
-        if: "${{ steps.check-change.outputs.changed == 1 }}"
+        if: steps.check-change.outputs.sources_changed == 'true'
         run: |
           export NIXPKGS_ALLOW_UNFREE=1
           nix flake show --json | jq  '.packages."x86_64-linux"|keys[]' | xargs -I {} nix build --impure .#{}
       - name: Commit changes
-        if: "${{ steps.check-change.outputs.changed == 1 }}"
+        if: steps.check-change.outputs.changed == 'true'
         run: |
           git config --local user.email "action@miao.dev"
           git config --local user.name "nvfetcher action"
-          git commit generated -m "Update generated dependencies"
+          git commit -m "Update generated sources and version report"
       - name: Push changes
-        if: "${{ steps.check-change.outputs.changed == 1 }}"
+        if: steps.check-change.outputs.changed == 'true'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
