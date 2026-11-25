@@ -8,29 +8,29 @@ Packages are sorted by their latest update, newest first.
 
 | Package name | Platform | Version | Last updated |
 | --- | --- | --- | --- |
-| computer-use-linux-aarch64 |  | v0.7.61 | 2026-11-24 15:50:45 UTC |
-| computer-use-linux-cosmic-aarch64 |  | v0.7.61 | 2026-11-24 15:50:45 UTC |
-| computer-use-linux-cosmic-x86_64 |  | v0.7.61 | 2026-11-24 15:50:45 UTC |
-| computer-use-linux-indicator-aarch64 |  | v0.7.61 | 2026-11-24 15:50:45 UTC |
-| computer-use-linux-indicator-x86_64 |  | v0.7.61 | 2026-11-24 15:50:45 UTC |
-| computer-use-linux-x86_64 |  | v0.7.61 | 2026-11-24 15:50:45 UTC |
-| orca | darwin-arm64 | v1.4.273 | 2026-11-24 15:50:45 UTC |
-|  | darwin-x64 | v1.4.273 | 2026-11-24 15:50:45 UTC |
-|  | linux-arm64 | v1.4.273 | 2026-11-24 15:50:45 UTC |
-|  | linux-x64 | v1.4.273 | 2026-11-24 15:50:45 UTC |
-| vscode-insider | darwin-arm64 | https://vscode.download.prss.microsoft.com/dbazure/download/insider/661626d0e72f97806550790a98fb87116c9db825/VSCode-darwin-arm64.zip | 2026-11-24 15:50:45 UTC |
-|  | linux-arm64 | https://vscode.download.prss.microsoft.com/dbazure/download/insider/661626d0e72f97806550790a98fb87116c9db825/code-insider-arm64-1795525837.tar.gz | 2026-11-24 15:50:45 UTC |
-|  | linux-x64 | https://vscode.download.prss.microsoft.com/dbazure/download/insider/661626d0e72f97806550790a98fb87116c9db825/code-insider-x64-1795525881.tar.gz | 2026-11-24 15:50:45 UTC |
+| computer-use-linux-aarch64 |  | v0.7.62 | 2026-11-25 15:31:48 UTC |
+| computer-use-linux-cosmic-aarch64 |  | v0.7.62 | 2026-11-25 15:31:48 UTC |
+| computer-use-linux-cosmic-x86_64 |  | v0.7.62 | 2026-11-25 15:31:48 UTC |
+| computer-use-linux-indicator-aarch64 |  | v0.7.62 | 2026-11-25 15:31:48 UTC |
+| computer-use-linux-indicator-x86_64 |  | v0.7.62 | 2026-11-25 15:31:48 UTC |
+| computer-use-linux-x86_64 |  | v0.7.62 | 2026-11-25 15:31:48 UTC |
+| oh-my-pi | darwin-arm64 | v19.2.0 | 2026-11-25 15:31:48 UTC |
+|  | darwin-x64 | v19.2.0 | 2026-11-25 15:31:48 UTC |
+|  | linux-arm64 | v19.2.0 | 2026-11-25 15:31:48 UTC |
+|  | linux-x64 | v19.2.0 | 2026-11-25 15:31:48 UTC |
+| orca | darwin-arm64 | v1.4.274 | 2026-11-25 15:31:48 UTC |
+|  | darwin-x64 | v1.4.274 | 2026-11-25 15:31:48 UTC |
+|  | linux-arm64 | v1.4.274 | 2026-11-25 15:31:48 UTC |
+|  | linux-x64 | v1.4.274 | 2026-11-25 15:31:48 UTC |
+| vscode-insider | darwin-arm64 | https://vscode.download.prss.microsoft.com/dbazure/download/insider/d8b0b6fc93e3027e3dae61d348d73f8b3f33c59c/VSCode-darwin-arm64.zip | 2026-11-25 15:31:48 UTC |
+|  | linux-arm64 | https://vscode.download.prss.microsoft.com/dbazure/download/insider/d8b0b6fc93e3027e3dae61d348d73f8b3f33c59c/code-insider-arm64-1795585015.tar.gz | 2026-11-25 15:31:48 UTC |
+|  | linux-x64 | https://vscode.download.prss.microsoft.com/dbazure/download/insider/d8b0b6fc93e3027e3dae61d348d73f8b3f33c59c/code-insider-x64-1795585168.tar.gz | 2026-11-25 15:31:48 UTC |
+| vscode | darwin-arm64 | https://vscode.download.prss.microsoft.com/dbazure/download/stable/661626d0e72f97806550790a98fb87116c9db825/VSCode-darwin-arm64.zip | 2026-11-25 15:31:48 UTC |
+|  | linux-arm64 | https://vscode.download.prss.microsoft.com/dbazure/download/stable/661626d0e72f97806550790a98fb87116c9db825/code-stable-arm64-1795525818.tar.gz | 2026-11-25 15:31:48 UTC |
+|  | linux-x64 | https://vscode.download.prss.microsoft.com/dbazure/download/stable/661626d0e72f97806550790a98fb87116c9db825/code-stable-x64-1795525921.tar.gz | 2026-11-25 15:31:48 UTC |
 | verus | darwin-arm64 | 0.2026.11.22.1ce6a59 | 2026-11-23 15:54:59 UTC |
 |  | darwin-x64 | 0.2026.11.22.1ce6a59 | 2026-11-23 15:54:59 UTC |
 |  | linux-x64 | 0.2026.11.22.1ce6a59 | 2026-11-23 15:54:59 UTC |
-| oh-my-pi | darwin-arm64 | v19.1.1 | 2026-11-23 15:54:59 UTC |
-|  | darwin-x64 | v19.1.1 | 2026-11-23 15:54:59 UTC |
-|  | linux-arm64 | v19.1.1 | 2026-11-23 15:54:59 UTC |
-|  | linux-x64 | v19.1.1 | 2026-11-23 15:54:59 UTC |
-| vscode | darwin-arm64 | https://vscode.download.prss.microsoft.com/dbazure/download/stable/8a14f0cc1b08d531eb83255ea3764ae22aa932b5/VSCode-darwin-arm64.zip | 2026-11-18 13:53:49 UTC |
-|  | linux-arm64 | https://vscode.download.prss.microsoft.com/dbazure/download/stable/8a14f0cc1b08d531eb83255ea3764ae22aa932b5/code-stable-arm64-1794902859.tar.gz | 2026-11-18 13:53:49 UTC |
-|  | linux-x64 | https://vscode.download.prss.microsoft.com/dbazure/download/stable/8a14f0cc1b08d531eb83255ea3764ae22aa932b5/code-stable-x64-1794902874.tar.gz | 2026-11-18 13:53:49 UTC |
 | obscura-browser-bin | darwin-arm64 | v0.2.7 | 2026-11-14 12:06:40 UTC |
 |  | darwin-x64 | v0.2.7 | 2026-11-14 12:06:40 UTC |
 |  | linux-arm64 | v0.2.7 | 2026-11-14 12:06:40 UTC |

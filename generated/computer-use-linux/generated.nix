@@ -8,50 +8,50 @@
 {
   computer-use-linux-aarch64 = {
     pname = "computer-use-linux-aarch64";
-    version = "v0.7.61";
+    version = "v0.7.62";
     src = fetchurl {
-      url = "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.61/computer-use-linux-aarch64-unknown-linux-gnu";
-      sha256 = "sha256-QaP+t3Yffyfkv26rx7BHPVVdI8aiCBSAdoU23Cqizxs=";
+      url = "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.62/computer-use-linux-aarch64-unknown-linux-gnu";
+      sha256 = "sha256-5+Lm2PDOOK+Hm0IPg9QRS2PJVonVQJa5e2x+vBdTJXs=";
     };
   };
   computer-use-linux-cosmic-aarch64 = {
     pname = "computer-use-linux-cosmic-aarch64";
-    version = "v0.7.61";
+    version = "v0.7.62";
     src = fetchurl {
-      url = "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.61/computer-use-linux-cosmic-aarch64-unknown-linux-gnu";
-      sha256 = "sha256-GuRFMMfXQ05Yc8GGZ3VEKwu1aCA5IjuxZvGTrnQW3gI=";
+      url = "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.62/computer-use-linux-cosmic-aarch64-unknown-linux-gnu";
+      sha256 = "sha256-lRN9Wipfc07WDtPktcItmMPDONfB+Gs6oKqyKUq5xl8=";
     };
   };
   computer-use-linux-cosmic-x86_64 = {
     pname = "computer-use-linux-cosmic-x86_64";
-    version = "v0.7.61";
+    version = "v0.7.62";
     src = fetchurl {
-      url = "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.61/computer-use-linux-cosmic-x86_64-unknown-linux-gnu";
-      sha256 = "sha256-H3tA56sugcOIjkeg3RFJYqj9GCVNgzUkeQQMgNBj1fk=";
+      url = "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.62/computer-use-linux-cosmic-x86_64-unknown-linux-gnu";
+      sha256 = "sha256-az+3Znkl3f1HHSo+0xaSppgfiErsMm5HHZT6rGI5oX0=";
     };
   };
   computer-use-linux-indicator-aarch64 = {
     pname = "computer-use-linux-indicator-aarch64";
-    version = "v0.7.61";
+    version = "v0.7.62";
     src = fetchurl {
-      url = "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.61/computer-use-linux-indicator-aarch64-unknown-linux-gnu";
-      sha256 = "sha256-1zGGp5M45kyhM2UUSdBFatuV67Bc0qUiDqB2o4eOAXA=";
+      url = "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.62/computer-use-linux-indicator-aarch64-unknown-linux-gnu";
+      sha256 = "sha256-n4HAhXxQxGYEiEa0LsrKsIt/QuFUo6p4LRZF4XRRVPc=";
     };
   };
   computer-use-linux-indicator-x86_64 = {
     pname = "computer-use-linux-indicator-x86_64";
-    version = "v0.7.61";
+    version = "v0.7.62";
     src = fetchurl {
-      url = "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.61/computer-use-linux-indicator-x86_64-unknown-linux-gnu";
-      sha256 = "sha256-MQtATskWtePiRTnNMX5Ppia5O0GqVlaeTJjC2kkpNuI=";
+      url = "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.62/computer-use-linux-indicator-x86_64-unknown-linux-gnu";
+      sha256 = "sha256-WWnDCVXx13qEfGsimASXBt7zgIhi5uKQIL8gZuDcYk8=";
     };
   };
   computer-use-linux-x86_64 = {
     pname = "computer-use-linux-x86_64";
-    version = "v0.7.61";
+    version = "v0.7.62";
     src = fetchurl {
-      url = "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.61/computer-use-linux-x86_64-unknown-linux-gnu";
-      sha256 = "sha256-+o60EfM7lM5xjx1PiuVtDqmfnlNIcNGpaMwPtJtKEiY=";
+      url = "https://github.com/agent-sh/computer-use-linux/releases/download/v0.7.62/computer-use-linux-x86_64-unknown-linux-gnu";
+      sha256 = "sha256-2usRXzbetgmce8Sk/pE/hFTVQcQOXTUGVx2t+Oz4fS0=";
     };
   };
 }
