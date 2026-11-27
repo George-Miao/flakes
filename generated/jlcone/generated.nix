@@ -8,18 +8,18 @@
 {
   jlcone-darwin-arm64 = {
     pname = "jlcone-darwin-arm64";
-    version = "1.0.72";
+    version = "1.0.74";
     src = fetchurl {
-      url = "https://rs.jlcpcb.com/static/APP/app_version/jlcone-1.0.72-arm64.dmg";
-      sha256 = "sha256-Q+zkOliEiYOtgW4sIqS1h5ANc7Zn0sKQu/KC9HpKvJM=";
+      url = "https://rs.jlcpcb.com/static/APP/app_version/jlcone-1.0.74-arm64.dmg";
+      sha256 = "sha256-bFGCUAYpys4BmPGaHIwTEhDr4jCoz4iWMVwyLWCrixw=";
     };
   };
   jlcone-linux-x64 = {
     pname = "jlcone-linux-x64";
-    version = "1.0.73";
+    version = "1.0.74";
     src = fetchurl {
-      url = "https://rs.jlcpcb.com/static/APP/app_version/jlcone-1.0.73.deb";
-      sha256 = "sha256-Nf4nim48jegVERfsVFLMLB3NR0DlK/IsujPPSPrmVF4=";
+      url = "https://rs.jlcpcb.com/static/APP/app_version/jlcone-1.0.74.deb";
+      sha256 = "sha256-0heMl6KVhGYOc0cQv4QPLBOcmHVBvOIQtcDOVxBoO3o=";
     };
   };
 }

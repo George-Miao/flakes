@@ -8,23 +8,25 @@ Packages are sorted by their latest update, newest first.
 
 | Package name | Platform | Version | Last updated |
 | --- | --- | --- | --- |
-| computer-use-linux-aarch64 |  | v0.7.64 | 2026-11-26 15:03:51 UTC |
-| computer-use-linux-cosmic-aarch64 |  | v0.7.64 | 2026-11-26 15:03:51 UTC |
-| computer-use-linux-cosmic-x86_64 |  | v0.7.64 | 2026-11-26 15:03:51 UTC |
-| computer-use-linux-indicator-aarch64 |  | v0.7.64 | 2026-11-26 15:03:51 UTC |
-| computer-use-linux-indicator-x86_64 |  | v0.7.64 | 2026-11-26 15:03:51 UTC |
-| computer-use-linux-x86_64 |  | v0.7.64 | 2026-11-26 15:03:51 UTC |
+| computer-use-linux-aarch64 |  | v0.7.66 | 2026-11-27 14:58:34 UTC |
+| computer-use-linux-cosmic-aarch64 |  | v0.7.66 | 2026-11-27 14:58:34 UTC |
+| computer-use-linux-cosmic-x86_64 |  | v0.7.66 | 2026-11-27 14:58:34 UTC |
+| computer-use-linux-indicator-aarch64 |  | v0.7.66 | 2026-11-27 14:58:34 UTC |
+| computer-use-linux-indicator-x86_64 |  | v0.7.66 | 2026-11-27 14:58:34 UTC |
+| computer-use-linux-x86_64 |  | v0.7.66 | 2026-11-27 14:58:34 UTC |
+| jlcone | darwin-arm64 | 1.0.74 | 2026-11-27 14:58:34 UTC |
+|  | linux-x64 | 1.0.74 | 2026-11-27 14:58:34 UTC |
+| orca | darwin-arm64 | v1.4.280 | 2026-11-27 14:58:34 UTC |
+|  | darwin-x64 | v1.4.280 | 2026-11-27 14:58:34 UTC |
+|  | linux-arm64 | v1.4.280 | 2026-11-27 14:58:34 UTC |
+|  | linux-x64 | v1.4.280 | 2026-11-27 14:58:34 UTC |
+| vscode-insider | darwin-arm64 | https://vscode.download.prss.microsoft.com/dbazure/download/insider/e8b6d8b546735371b1d04237b0a7c40558ad82a6/VSCode-darwin-arm64.zip | 2026-11-27 14:58:34 UTC |
+|  | linux-arm64 | https://vscode.download.prss.microsoft.com/dbazure/download/insider/e8b6d8b546735371b1d04237b0a7c40558ad82a6/code-insider-arm64-1795758058.tar.gz | 2026-11-27 14:58:34 UTC |
+|  | linux-x64 | https://vscode.download.prss.microsoft.com/dbazure/download/insider/e8b6d8b546735371b1d04237b0a7c40558ad82a6/code-insider-x64-1795758135.tar.gz | 2026-11-27 14:58:34 UTC |
 | oh-my-pi | darwin-arm64 | v19.2.1 | 2026-11-26 15:03:51 UTC |
 |  | darwin-x64 | v19.2.1 | 2026-11-26 15:03:51 UTC |
 |  | linux-arm64 | v19.2.1 | 2026-11-26 15:03:51 UTC |
 |  | linux-x64 | v19.2.1 | 2026-11-26 15:03:51 UTC |
-| orca | darwin-arm64 | v1.4.278 | 2026-11-26 15:03:51 UTC |
-|  | darwin-x64 | v1.4.278 | 2026-11-26 15:03:51 UTC |
-|  | linux-arm64 | v1.4.278 | 2026-11-26 15:03:51 UTC |
-|  | linux-x64 | v1.4.278 | 2026-11-26 15:03:51 UTC |
-| vscode-insider | darwin-arm64 | https://vscode.download.prss.microsoft.com/dbazure/download/insider/71455ead7e42b27ba0498d3c1c40c7ca4aea9398/VSCode-darwin-arm64.zip | 2026-11-26 15:03:51 UTC |
-|  | linux-arm64 | https://vscode.download.prss.microsoft.com/dbazure/download/insider/71455ead7e42b27ba0498d3c1c40c7ca4aea9398/code-insider-arm64-1795686658.tar.gz | 2026-11-26 15:03:51 UTC |
-|  | linux-x64 | https://vscode.download.prss.microsoft.com/dbazure/download/insider/71455ead7e42b27ba0498d3c1c40c7ca4aea9398/code-insider-x64-1795686711.tar.gz | 2026-11-26 15:03:51 UTC |
 | vscode | darwin-arm64 | https://vscode.download.prss.microsoft.com/dbazure/download/stable/661626d0e72f97806550790a98fb87116c9db825/VSCode-darwin-arm64.zip | 2026-11-25 15:31:48 UTC |
 |  | linux-arm64 | https://vscode.download.prss.microsoft.com/dbazure/download/stable/661626d0e72f97806550790a98fb87116c9db825/code-stable-arm64-1795525818.tar.gz | 2026-11-25 15:31:48 UTC |
 |  | linux-x64 | https://vscode.download.prss.microsoft.com/dbazure/download/stable/661626d0e72f97806550790a98fb87116c9db825/code-stable-x64-1795525921.tar.gz | 2026-11-25 15:31:48 UTC |
@@ -35,8 +37,6 @@ Packages are sorted by their latest update, newest first.
 |  | darwin-x64 | v0.2.7 | 2026-11-14 12:06:40 UTC |
 |  | linux-arm64 | v0.2.7 | 2026-11-14 12:06:40 UTC |
 |  | linux-x64 | v0.2.7 | 2026-11-14 12:06:40 UTC |
-| jlcone | linux-x64 | 1.0.73 | 2026-11-13 13:03:33 UTC |
-|  | darwin-arm64 | 1.0.72 | 2026-11-12 17:10:15 UTC |
 | clashx-meta |  | v1.4.48 | 2026-11-13 13:03:33 UTC |
 | kicad-mcp |  | v2.9.0 | 2026-11-12 13:45:52 UTC |
 | kicad-skip |  | 0.2.5 | 2026-11-11 03:12:28 UTC |
