@@ -8,6 +8,13 @@ Packages are sorted by their latest update, newest first.
 
 | Package name | Platform | Version | Last updated |
 | --- | --- | --- | --- |
+| orca | darwin-arm64 | v1.4.281 | 2026-11-28 14:07:45 UTC |
+|  | darwin-x64 | v1.4.281 | 2026-11-28 14:07:45 UTC |
+|  | linux-arm64 | v1.4.281 | 2026-11-28 14:07:45 UTC |
+|  | linux-x64 | v1.4.281 | 2026-11-28 14:07:45 UTC |
+| vscode-insider | darwin-arm64 | https://vscode.download.prss.microsoft.com/dbazure/download/insider/d7885d3da4a36d9ce6e51a1ee2d4710883450396/VSCode-darwin-arm64.zip | 2026-11-28 14:07:45 UTC |
+|  | linux-arm64 | https://vscode.download.prss.microsoft.com/dbazure/download/insider/d7885d3da4a36d9ce6e51a1ee2d4710883450396/code-insider-arm64-1795801081.tar.gz | 2026-11-28 14:07:45 UTC |
+|  | linux-x64 | https://vscode.download.prss.microsoft.com/dbazure/download/insider/d7885d3da4a36d9ce6e51a1ee2d4710883450396/code-insider-x64-1795801067.tar.gz | 2026-11-28 14:07:45 UTC |
 | computer-use-linux-aarch64 |  | v0.7.66 | 2026-11-27 14:58:34 UTC |
 | computer-use-linux-cosmic-aarch64 |  | v0.7.66 | 2026-11-27 14:58:34 UTC |
 | computer-use-linux-cosmic-x86_64 |  | v0.7.66 | 2026-11-27 14:58:34 UTC |
@@ -16,13 +23,6 @@ Packages are sorted by their latest update, newest first.
 | computer-use-linux-x86_64 |  | v0.7.66 | 2026-11-27 14:58:34 UTC |
 | jlcone | darwin-arm64 | 1.0.74 | 2026-11-27 14:58:34 UTC |
 |  | linux-x64 | 1.0.74 | 2026-11-27 14:58:34 UTC |
-| orca | darwin-arm64 | v1.4.280 | 2026-11-27 14:58:34 UTC |
-|  | darwin-x64 | v1.4.280 | 2026-11-27 14:58:34 UTC |
-|  | linux-arm64 | v1.4.280 | 2026-11-27 14:58:34 UTC |
-|  | linux-x64 | v1.4.280 | 2026-11-27 14:58:34 UTC |
-| vscode-insider | darwin-arm64 | https://vscode.download.prss.microsoft.com/dbazure/download/insider/e8b6d8b546735371b1d04237b0a7c40558ad82a6/VSCode-darwin-arm64.zip | 2026-11-27 14:58:34 UTC |
-|  | linux-arm64 | https://vscode.download.prss.microsoft.com/dbazure/download/insider/e8b6d8b546735371b1d04237b0a7c40558ad82a6/code-insider-arm64-1795758058.tar.gz | 2026-11-27 14:58:34 UTC |
-|  | linux-x64 | https://vscode.download.prss.microsoft.com/dbazure/download/insider/e8b6d8b546735371b1d04237b0a7c40558ad82a6/code-insider-x64-1795758135.tar.gz | 2026-11-27 14:58:34 UTC |
 | oh-my-pi | darwin-arm64 | v19.2.1 | 2026-11-26 15:03:51 UTC |
 |  | darwin-x64 | v19.2.1 | 2026-11-26 15:03:51 UTC |
 |  | linux-arm64 | v19.2.1 | 2026-11-26 15:03:51 UTC |
